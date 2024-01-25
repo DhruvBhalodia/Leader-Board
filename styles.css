@@ -549,6 +549,23 @@ input[type="checkbox"]:checked+.custom-checkbox::after {
   }
 }
 @media only screen and (max-width: 638px){
+  .checkbox {
+    font-size: 14px;
+  }
+  .filter-section>h3,
+  .filter-section2>h3,
+  .filter-section3>h3 {
+    text-align: center;
+    font-size: 15px;
+    font-family: monospace;
+    font-weight: 300;
+    padding: 3px;
+  }
+  .filter-section,
+  .filter-section2,
+  .filter-section3{
+    padding: 10px;
+  }
   .leaderboard h2 {
     font-size: 25px;
     color: rgba(90, 104, 123, 255);
