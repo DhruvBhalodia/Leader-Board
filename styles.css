@@ -1,0 +1,605 @@
+body {
+  overflow-x: hidden;
+  background-color: rgba(37, 37, 56, 255);
+}
+
+
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 15vw;
+  background-color: rgba(43, 48, 65, 255);
+  float: left;
+}
+
+.sidebar ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+button:focus {
+  outline: none;
+}
+
+img {
+  height: 70px;
+  border-radius: 50%;
+}
+
+tr img {
+  height: 30px;
+  width: 30px;
+}
+
+.sidebar ul li {
+  padding: 8px 15px;
+  border-bottom: 1px solid #555;
+  font-size: 25px;
+  box-sizing: border-box;
+  flex-direction: column;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 33.333vh;
+  position: relative;
+}
+
+.sidebar ul li a {
+  color: white;
+  text-decoration: none;
+}
+
+.sidebar ul li.active::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 8px;
+  /* Adjust the width of the vertical line as needed */
+  height: 100%;
+  background-color: rgba(14, 227, 228, 255);
+  /* Change color as needed */
+
+}
+
+.sidebar ul li:hover {
+  cursor: pointer;
+  background-color: rgba(14, 227, 228, 255);
+}
+
+/* Custom styles */
+.leaderboard {
+  padding: 20px;
+  overflow: hidden;
+  /* Clear float */
+  margin-left: 15vw;
+  /* Consider sidebar width */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100%;
+}
+
+
+.leaderboard h2 {
+  color: rgba(90, 104, 123, 255);
+  font-family: monospace;
+  font-weight: bolder;
+  margin-bottom: 20px;
+}
+
+.sidebar ul li.active {
+  background-color: rgba(52, 60, 80, 255);
+}
+
+.leaderboard-container {
+  display: flex;
+  width: calc(100% - 4vw);
+}
+
+.leetcode-container,
+.codeforces-container {
+  display: flex;
+  width: calc(100% - 4vw);
+}
+
+/* Leaderboard table */
+.leaderboard-table,
+.codeforces-table {
+  align-items: flex-start;
+  flex: 5;
+  overflow: auto;
+}
+
+.leetcode-table {
+  align-items: flex-start;
+  flex: 5;
+  overflow: auto;
+}
+
+.leaderboard-table table {
+  background-color: rgba(45, 54, 68, 255);
+  /* Takes 70% of the available width */
+  border-radius: 10px;
+  height: fit-content;
+  color: white;
+  width: 100%;
+  border-collapse: collapse;
+  /* Optional: collapse table borders */
+}
+
+.leetcode-table table,
+.codeforces-table table {
+  background-color: rgba(45, 54, 68, 255);
+  /* Takes 70% of the available width */
+  border-radius: 10px;
+  height: fit-content;
+  color: white;
+  width: 100%;
+  border-collapse: collapse;
+  /* Optional: collapse table borders */
+}
+
+.leaderboard-table table tr td:first-child {
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.leaderboard-table table tr:nth-child(even) {
+  background-color: rgba(42, 46, 63, 255);
+}
+
+.leaderboard-table table tr td:nth-child(2) {
+  width: 20px;
+}
+
+.leaderboard-table table tr td,
+th {
+  padding: 10px;
+}
+
+.leaderboard-table table tr td.rank {
+  width: 70px;
+  text-align: center;
+  font-weight: bold;
+}
+
+.leaderboard-table table tr:hover {
+  transform: translateZ(20px);
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+}
+
+.leetcode-table table tr td:first-child {
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.leetcode-table table tr:nth-child(even) {
+  background-color: rgba(42, 46, 63, 255);
+}
+
+.leetcode-table table tr td:nth-child(2) {
+  width: 20px;
+}
+
+.leetcode-table table tr td,
+th {
+  padding: 10px;
+}
+
+.leetcode-table table tr td.rank {
+  width: 70px;
+  text-align: center;
+  font-weight: bold;
+}
+
+.leetcode-table table tr:hover {
+  transform: translateZ(20px);
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+}
+
+.codeforces-table table tr td:first-child {
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.codeforces-table table tr:nth-child(even) {
+  background-color: rgba(42, 46, 63, 255);
+}
+
+.codeforces-table table tr td:nth-child(2) {
+  width: 20px;
+}
+
+.codeforces-table table tr td,
+th {
+  padding: 10px;
+}
+
+.codeforces-table table tr td.rank {
+  width: 70px;
+  text-align: center;
+  font-weight: bold;
+}
+
+.codeforces-table table tr:hover {
+  transform: translateZ(20px);
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+}
+
+.name-with-stars {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+tr td {
+  font-size: 15px;
+}
+
+.additional-info {
+  display: flex;
+  align-items: center;
+}
+
+.separator {
+  font-size: 14px;
+  /* Adjust font size of the separator */
+  color: #555;
+  ;
+}
+
+.year,
+.stars {
+  color: rgba(90, 104, 123, 255);
+  font-size: 16px;
+  /* Add additional styles as needed for stars */
+}
+
+.year,
+.separator,
+.stars {
+  font-weight: 500;
+  margin: 0 4px;
+  /* Adjust margin between the elements */
+  padding: 0 2px;
+  /* Adjust padding around elements */
+}
+
+.filter-section {
+  flex: 3;
+  background-color: rgba(42, 49, 64, 255);
+  margin: 0px 0px 15px 30px;
+  padding: 20px;
+  position: sticky;
+  top: 0;
+  height: fit-content;
+  overflow: auto;
+  color: white;
+  border-radius: 10px;
+  box-shadow: 4px 5px 20px rgba(0, 0, 0, 0.5);
+}
+
+.filter-section2,
+.filter-section3 {
+  flex: 3;
+  background-color: rgba(42, 49, 64, 255);
+  margin: 0px 0px 15px 30px;
+  padding: 20px;
+  position: sticky;
+  top: 0;
+  height: fit-content;
+  overflow: auto;
+  color: white;
+  border-radius: 10px;
+  box-shadow: 4px 5px 20px rgba(0, 0, 0, 0.5);
+}
+
+.filter-section>h3,
+.filter-section3>h3 {
+  text-align: center;
+  font-size: 20px;
+  font-family: monospace;
+  font-weight: 300;
+  padding: 3px;
+}
+
+.filter-section>label,
+.filter-section3>label {
+  display: block;
+}
+
+.filter-section2>h3 {
+  text-align: center;
+  font-size: 20px;
+  font-family: monospace;
+  font-weight: 300;
+  padding: 3px;
+}
+
+.filter-section2>label {
+  display: block;
+}
+
+.checkbox {
+  position: relative;
+  padding-left: 30px;
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+
+.custom-checkbox {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  background-color: #fff;
+  margin-top: 3px;
+}
+
+.custom-checkbox::after {
+  content: '';
+  position: absolute;
+  display: none;
+  top: 4px;
+  left: 6px;
+  width: 6px;
+  height: 12px;
+  border: solid #00ff00;
+  border-width: 0 3px 3px 0;
+  transform: rotate(45deg);
+}
+
+input[type="checkbox"]:checked+.custom-checkbox::after {
+  display: block;
+}
+
+.checkbox>input {
+  display: none;
+}
+
+#pageNumber,
+#pageNumber2,
+#pageNumber3 {
+  margin: 0 10px;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+#pagination,
+#pagination2,
+#pagination3 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px 0;
+}
+
+#pagination button,
+#pagination3 button {
+  padding: 10px 20px;
+  margin: 5px;
+  border: none;
+  box-sizing: border-box;
+  border-radius: 5px;
+  font-size: 16px;
+  background-color: rgba(46, 55, 71, 255);
+  color: #fff;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+#pagination button:hover,
+#pagination3 button:hover {
+  background-color: #303f9f;
+}
+
+#pagination2 button {
+  padding: 10px 20px;
+  margin: 5px;
+  border: none;
+  box-sizing: border-box;
+  border-radius: 5px;
+  font-size: 16px;
+  background-color: rgba(46, 55, 71, 255);
+  color: #fff;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+#pagination2 button:hover {
+  background-color: #303f9f;
+}
+
+.search-container {
+  margin-bottom: 15px;
+}
+.search-container input{
+  width: 300px;
+}
+
+.overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  /* Adjust the color and opacity as needed */
+  z-index: 900;
+  /* Below the sidebar but above the content */
+}
+
+.overlay.act {
+  display: block;
+}
+
+.bar {
+  display: flex;
+  color: rgba(90, 104, 123, 255);
+}
+#filterContainer, #filterContainer2, #filterContainer3{
+  display: none;
+}
+.filter-button, .filter-button2, .filter-button3{
+  display: none;
+}
+@media only screen and (max-width: 1300px) {
+  .sidebar {
+    display: none;
+  }
+
+  .toggle-sidebar {
+    display: block;
+    position: fixed;
+    top: 10px;
+    left: 30px;
+    cursor: pointer;
+    color: white;
+    font-size: 20px;
+  }
+
+  .sidebar {
+    width: fit-content;
+  }
+
+  .leaderboard {
+    margin: 0;
+    width: 100%;
+  }
+
+  .leaderboard-table {
+    margin: 0;
+    width: 100%;
+  }
+
+  .main {
+    margin-left: 0;
+    /* Adjust margin to 0 when sidebar is hidden */
+  }
+}
+@media only screen and (max-width: 913px) {
+  .filter-container, .filter-container2, .filter-container3{
+    display: none;
+    position: fixed;
+    top: 3;
+    right: 0;
+    overflow-y: auto;
+  }
+
+  #filterContainer, #filterContainer2, #filterContainer3{
+    display: none;
+    position: absolute;
+    margin-right: 15px;
+    top: 3;
+    right: 2;
+  }
+
+  .filter-button, .filter-button2, .filter-button3{
+    background-color: rgba(46, 55, 71, 255);
+    color: white;
+    margin-left: 15px;
+    position: relative;
+    display: block;
+    margin-bottom: 5px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 5px;
+  }
+
+  .leaderboard {
+    margin: 0;
+    width: 100%;
+  }
+
+  .leaderboard-table {
+    margin: 0;
+    width: 100%;
+  }
+
+  .main {
+    margin-left: 0;
+    /* Adjust margin to 0 when sidebar is hidden */
+  }
+}
+@media only screen and (max-width: 638px){
+  .leaderboard h2 {
+    font-size: 25px;
+    color: rgba(90, 104, 123, 255);
+    font-family: monospace;
+    font-weight: bolder;
+    margin-bottom: 20px;
+  }
+  .search-container input{
+    font-size: 15px;
+    width: 250px;
+  }
+  td.name-with-stars{
+    font-size: 14px;
+  }
+  .year, .stars{
+    font-size: 14px;
+  }
+  .leaderboard-table table tr td:first-child{
+    font-size: 20px;
+  }
+  .leaderboard-table table tr td{
+    padding: 7px;
+  }
+  tr td{
+    font-size: 15px;
+  }
+}
+@media only screen and (max-width: 515px){
+  .leaderboard h2 {
+    font-size: 20px;
+    color: rgba(90, 104, 123, 255);
+    font-family: monospace;
+    font-weight: bolder;
+    margin-bottom: 20px;
+  }
+  .search-container input{
+    font-size: 13px;
+    width: 200px;
+    height: 25px;
+  }
+  td.name-with-stars{
+    font-size: 13px;
+  }
+  .year, .stars{
+    font-size: 13px;
+    padding: 2px;
+  }
+  .leaderboard-table table tr td:first-child{
+    font-size: 17px;
+  }
+  .leaderboard-table table tr td{
+    padding: 5px;
+  }
+  .separator{
+    margin: 0px 2px;
+    padding: 0px;
+  }
+  tr td{
+    font-size: 13px;
+  }
+  .leaderboard-table table tr td{
+    padding-right: 10px;
+  }
+  tr img{
+    height: 25px;
+    width: 25px;
+  }
+  .filter-button, .filter-button2, .filter-button3{
+    font-size: 13px;
+  }
+}
