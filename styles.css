@@ -452,6 +452,23 @@ input[type="checkbox"]:checked+.custom-checkbox::after {
   display: none;
 }
 @media only screen and (max-width: 1300px) {
+
+  .sidebar ul li {
+    padding: 15px;
+    border-bottom: 1px solid #555;
+    font-size: 20px;
+    box-sizing: border-box;
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height:fit-content;
+    position: relative;
+    top: 50px;
+  }
+  img {
+    height: 40px;
+  }
   .sidebar {
     display: none;
   }
@@ -460,7 +477,7 @@ input[type="checkbox"]:checked+.custom-checkbox::after {
     display: block;
     position: fixed;
     top: 10px;
-    left: 30px;
+    left: 10px;
     cursor: pointer;
     color: white;
     font-size: 20px;
@@ -552,6 +569,11 @@ input[type="checkbox"]:checked+.custom-checkbox::after {
   .leaderboard-table table tr td:first-child{
     font-size: 20px;
   }
+  .leaderboard-table table tr td.rank {
+    width: 50px;
+    text-align: center;
+    font-weight: bold;
+  }
   .leaderboard-table table tr td{
     padding: 7px;
   }
@@ -560,6 +582,11 @@ input[type="checkbox"]:checked+.custom-checkbox::after {
   }
 }
 @media only screen and (max-width: 515px){
+  .leaderboard-table table tr td.rank {
+    width: 30px;
+    text-align: center;
+    font-weight: bold;
+  }
   .leaderboard h2 {
     font-size: 20px;
     color: rgba(90, 104, 123, 255);
@@ -594,6 +621,7 @@ input[type="checkbox"]:checked+.custom-checkbox::after {
   }
   .leaderboard-table table tr td{
     padding-right: 10px;
+    padding-left: 10px;
   }
   tr img{
     height: 25px;
