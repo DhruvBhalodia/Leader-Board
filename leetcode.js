@@ -20,7 +20,7 @@ var filter = {
 };
 var ratings2 = []; // Ratings data will be stored here after fetching
 
-fetch('../Backend/leetcode.json')
+fetch('leetcode.json')
     .then(response => response.json())
     .then(data => {
         ratings2 = data;
