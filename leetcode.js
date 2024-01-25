@@ -20,7 +20,7 @@ var filter = {
 };
 var ratings2 = []; // Ratings data will be stored here after fetching
 
-fetch('leetcode.json')
+fetch('../Backend/leetcode.json')
     .then(response => response.json())
     .then(data => {
         ratings2 = data;
@@ -67,6 +67,20 @@ function filterChanged2() {
         filter.all = false;
     }
     selectedRatingFilter = document.getElementById('ratingFilter2').value;
+    updateScoreboard2();
+}
+function filterChanged21() {
+    filter.year1 = document.getElementById('firstYearCheckbox21').checked;
+    filter.year2 = document.getElementById('secondYearCheckbox21').checked;
+    filter.year3 = document.getElementById('thirdYearCheckbox21').checked;
+    filter.year4 = document.getElementById('fourthYearCheckbox21').checked;
+    if (!filter.year1 && !filter.year2 && !filter.year3 && !filter.year4) {
+        filter.all = true;
+    }
+    else {
+        filter.all = false;
+    }
+    selectedRatingFilter = document.getElementById('ratingFilter21').value;
     updateScoreboard2();
 }
 
