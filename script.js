@@ -113,7 +113,7 @@ var filter = {
 };
 var ratings = []; // Ratings data will be stored here after fetching
 
-fetch('../Backend/codechef.json')
+fetch('codechef.json')
   .then(response => response.json())
   .then(data => {
     ratings = data; // Assign fetched data to the ratings array
