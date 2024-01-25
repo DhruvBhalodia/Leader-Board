@@ -113,7 +113,7 @@ var filter = {
 };
 var ratings = []; // Ratings data will be stored here after fetching
 
-fetch('codechef.json')
+fetch('../Backend/codechef.json')
   .then(response => response.json())
   .then(data => {
     ratings = data; // Assign fetched data to the ratings array
@@ -143,6 +143,20 @@ function filterChanged() {
     filter.all = false;
   }
   selectedRatingFilter = document.getElementById('ratingFilter').value;
+  updateScoreboard();
+}
+function filterChanged1() {
+  filter.year1 = document.getElementById('firstYearCheckbox1').checked;
+  filter.year2 = document.getElementById('secondYearCheckbox1').checked;
+  filter.year3 = document.getElementById('thirdYearCheckbox1').checked;
+  filter.year4 = document.getElementById('fourthYearCheckbox1').checked;
+  if (!filter.year1 && !filter.year2 && !filter.year3 && !filter.year4) {
+    filter.all = true;
+  }
+  else {
+    filter.all = false;
+  }
+  selectedRatingFilter = document.getElementById('ratingFilter1').value;
   updateScoreboard();
 }
 
