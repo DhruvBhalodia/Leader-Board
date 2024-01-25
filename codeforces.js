@@ -17,10 +17,9 @@ var filter = {
 };
 var ratings3 = []; // Ratings data will be stored here after fetching
 
-fetch('../Backend/codeforces.json')
+fetch('codeforces.json')
     .then(response => response.json())
     .then(data => {
-        console.log('hellloooooooo')
         ratings3 = data;
         updateScoreboard3(); // Update the scoreboard once data is fetched
     })
