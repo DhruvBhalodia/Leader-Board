@@ -3,10 +3,11 @@
         "name": "Saurabh Jaiswar",
         "year": 2022,
         "id": "sasaurabh11",
-        "stars": "Pupil",
-        "codeforcesRating": 1232,
-        "totalContest": 27,
-        "img": "https://userpic.codeforces.org/no-title.jpg"
+        "stars": "Newbie",
+        "codeforcesRating": 1149,
+        "totalContest": 28,
+        "img": "https://userpic.codeforces.org/no-title.jpg",
+        "url": "https://codeforces.com/profile/sasaurabh11"
     },
     {
         "name": "Yashesh Bhavsar",
@@ -15,7 +16,8 @@
         "stars": "Expert",
         "codeforcesRating": 1738,
         "totalContest": 77,
-        "img": "https://userpic.codeforces.org/2498034/title/69ecbe8964cd9e0a.jpg"
+        "img": "https://userpic.codeforces.org/2498034/title/69ecbe8964cd9e0a.jpg",
+        "url": "https://codeforces.com/profile/yashesh_07"
     },
     {
         "name": "Aniruddha Kajave",
@@ -24,16 +26,18 @@
         "stars": "Newbie",
         "codeforcesRating": 1080,
         "totalContest": 7,
-        "img": "https://userpic.codeforces.org/no-title.jpg"
+        "img": "https://userpic.codeforces.org/no-title.jpg",
+        "url": "https://codeforces.com/profile/Aniii_1802"
     },
     {
         "name": "Jigyashu Gupta",
         "year": 2020,
         "id": "jigyashugupta",
         "stars": "Specialist",
-        "codeforcesRating": 1450,
-        "totalContest": 25,
-        "img": "https://userpic.codeforces.org/2973348/title/ba1f2068d41f7c83.jpg"
+        "codeforcesRating": 1438,
+        "totalContest": 26,
+        "img": "https://userpic.codeforces.org/2973348/title/ba1f2068d41f7c83.jpg",
+        "url": "https://codeforces.com/profile/jigyashugupta"
     },
     {
         "name": "Rajat Kumar Thakur",
@@ -42,6 +46,7 @@
         "stars": "Newbie",
         "codeforcesRating": 0,
         "totalContest": 0,
-        "img": "https://userpic.codeforces.org/no-title.jpg"
+        "img": "https://userpic.codeforces.org/no-title.jpg",
+        "url": "https://codeforces.com/profile/cp_valiant"
     }
 ]
