@@ -3,10 +3,11 @@
         "name": "Dhruv Bhalodiya",
         "year": 2022,
         "id": "dhruvbhalodia0204",
-        "stars": "Top 11.15%",
-        "leetcodeRating": 1723,
-        "totalContest": 14,
-        "img": "https://assets.leetcode.com/users/avatars/avatar_1696522666.png"
+        "stars": "Top 11.25%",
+        "leetcodeRating": 1721,
+        "totalContest": 16,
+        "img": "https://assets.leetcode.com/users/avatars/avatar_1696522666.png",
+        "url": "https://www.leetcode.com/dhruvbhalodia0204"
     },
     {
         "name": "Ankit Mishra",
@@ -15,34 +16,38 @@
         "stars": "Top Element not found%",
         "leetcodeRating": -1,
         "totalContest": 0,
-        "img": "https://assets.leetcode.com/users/avatars/avatar_1700715933.png"
+        "img": "https://assets.leetcode.com/users/avatars/avatar_1700715933.png",
+        "url": "https://www.leetcode.com/user4773LM"
     },
     {
         "name": "Daivik Hirpara",
         "year": 2022,
         "id": "daivik_hirpara",
-        "stars": "Top 9.9%",
-        "leetcodeRating": 1745,
-        "totalContest": 18,
-        "img": "https://assets.leetcode.com/users/avatars/avatar_1702543683.png"
+        "stars": "Top 7.81%",
+        "leetcodeRating": 1793,
+        "totalContest": 19,
+        "img": "https://assets.leetcode.com/users/avatars/avatar_1702543683.png",
+        "url": "https://www.leetcode.com/daivik_hirpara"
     },
     {
         "name": "Saurabh Jaiswar",
         "year": 2022,
         "id": "sasaurabh11",
-        "stars": "Top 15.72%",
-        "leetcodeRating": 1660,
-        "totalContest": 15,
-        "img": "https://assets.leetcode.com/users/default_avatar.jpg"
+        "stars": "Top 13.88%",
+        "leetcodeRating": 1683,
+        "totalContest": 17,
+        "img": "https://assets.leetcode.com/users/default_avatar.jpg",
+        "url": "https://www.leetcode.com/sasaurabh11"
     },
     {
         "name": "Fenil Jikadara",
         "year": 2022,
         "id": "imfeniljikadara",
-        "stars": "Top 43.46%",
-        "leetcodeRating": 1497,
-        "totalContest": 1,
-        "img": "https://assets.leetcode.com/users/avatars/avatar_1686059479.png"
+        "stars": "Top 55.12%",
+        "leetcodeRating": 1465,
+        "totalContest": 3,
+        "img": "https://assets.leetcode.com/users/avatars/avatar_1686059479.png",
+        "url": "https://www.leetcode.com/imfeniljikadara"
     },
     {
         "name": "Yashesh Bhavsar",
@@ -51,7 +56,8 @@
         "stars": "Top 0.44%",
         "leetcodeRating": 2394,
         "totalContest": 104,
-        "img": "https://assets.leetcode.com/users/avatars/avatar_1657916680.png"
+        "img": "https://assets.leetcode.com/users/avatars/avatar_1657916680.png",
+        "url": "https://www.leetcode.com/ForgottenSemicolon"
     },
     {
         "name": "Abhi Virani",
@@ -60,16 +66,18 @@
         "stars": "Top Element not found%",
         "leetcodeRating": -1,
         "totalContest": 0,
-        "img": "https://assets.leetcode.com/users/avatars/avatar_1702135820.png"
+        "img": "https://assets.leetcode.com/users/avatars/avatar_1702135820.png",
+        "url": "https://www.leetcode.com/Abhi_virani"
     },
     {
         "name": "Aniruddha Kajave",
         "year": 2021,
         "id": "aakajave",
-        "stars": "Top 14.42%",
+        "stars": "Top 14.44%",
         "leetcodeRating": 1676,
         "totalContest": 8,
-        "img": "https://assets.leetcode.com/users/avatars/avatar_1692428736.png"
+        "img": "https://assets.leetcode.com/users/avatars/avatar_1692428736.png",
+        "url": "https://www.leetcode.com/aakajave"
     },
     {
         "name": "Govind Bhatter",
@@ -78,7 +86,8 @@
         "stars": "Top Element not found%",
         "leetcodeRating": -1,
         "totalContest": 0,
-        "img": "https://assets.leetcode.com/users/default_avatar.jpg"
+        "img": "https://assets.leetcode.com/users/default_avatar.jpg",
+        "url": "https://www.leetcode.com/Govind9825"
     },
     {
         "name": "Jigyashu Gupta",
@@ -87,7 +96,8 @@
         "stars": "Top 3.26%",
         "leetcodeRating": 1967,
         "totalContest": 20,
-        "img": "https://assets.leetcode.com/users/avatars/avatar_1677180147.png"
+        "img": "https://assets.leetcode.com/users/avatars/avatar_1677180147.png",
+        "url": "https://www.leetcode.com/jigyashu72"
     },
     {
         "name": "Moksh Arora",
@@ -96,7 +106,8 @@
         "stars": "Top Element not found%",
         "leetcodeRating": -1,
         "totalContest": 0,
-        "img": "https://assets.leetcode.com/users/default_avatar.jpg"
+        "img": "https://assets.leetcode.com/users/default_avatar.jpg",
+        "url": "https://www.leetcode.com/aroramoksh11"
     },
     {
         "name": "Rajat Kumar Thakur",
@@ -105,6 +116,7 @@
         "stars": "Top Element not found%",
         "leetcodeRating": -1,
         "totalContest": 0,
-        "img": "https://assets.leetcode.com/users/default_avatar.jpg"
+        "img": "https://assets.leetcode.com/users/default_avatar.jpg",
+        "url": "https://www.leetcode.com/valiant420"
     }
 ]
