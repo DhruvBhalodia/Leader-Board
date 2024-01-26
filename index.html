@@ -4,6 +4,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description"
+    content="This is a leader board system which shows leaderboard of various sites like codechef, leetcode and codeforces. It includes data of students of IIIT Vadodara - ICD">
   <title>Leaderboard System</title>
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
@@ -27,7 +29,7 @@
       <h2>Codechef Leaderboard</h2>
       <div class="bar">
         <div class="search-container">
-          <input type="text" id="searchInput" placeholder="Search by name..." >
+          <input type="text" id="searchInput" placeholder="Search by name...">
         </div>
         <div>
           <div class="filter-button" onclick="toggleFilters()">Filters</div>
@@ -167,10 +169,10 @@
 
         </table>
         <div id="pagination2">
-          <button onclick="prevPage()">
+          <button onclick="prevPage2()">
             < </button>
               <span id="pageNumber2" style="color: white;"></span>
-              <button onclick="nextPage()"> > </button>
+              <button onclick="nextPage2()"> > </button>
         </div>
       </div>
       <div class="filter-container2">
@@ -215,7 +217,7 @@
     <h2>Codeforces Leaderboard</h2>
     <div class="bar">
       <div class="search-container">
-        <input type="text" id="searchInput3" placeholder="Search by name..." >
+        <input type="text" id="searchInput3" placeholder="Search by name...">
       </div>
       <div>
         <div class="filter-button3" onclick="toggleFilters3()">Filters</div>
@@ -262,10 +264,10 @@
 
         </table>
         <div id="pagination3">
-          <button onclick="prevPage()">
+          <button onclick="prevPage3()">
             < </button>
               <span id="pageNumber3" style="color: white;"></span>
-              <button onclick="nextPage()"> > </button>
+              <button onclick="nextPage3()"> > </button>
         </div>
       </div>
       <div class="filter-container3">
@@ -305,8 +307,8 @@
     </div>
   </div>
   </div>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
   <script src="script.js"></script>
   <script src="leetcode.js"></script>
   <script src="codeforces.js"></script>
