@@ -187,6 +187,7 @@ function updateScoreboard3() {
 }
 
 function nextPage3() {
+    var searchQuery = document.getElementById('searchInput3').value.toLowerCase();
     var filteredRatings = ratings3.filter(function (rating) {
         var yearFilter =
             (filter.all ||
