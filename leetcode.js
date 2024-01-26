@@ -123,7 +123,11 @@ function updateScoreboard2() {
 
     for (var i = 0; i < paginatedRatings.length; i++) {
         var tr = document.createElement('tr');
-
+        tr.setAttribute('data-href', paginatedRatings[i].url);
+        tr.addEventListener('click', function () {
+            var url = this.getAttribute('data-href');
+            window.open(url, '_blank');
+        });
         var tdRank = document.createElement('td');
         tdRank.textContent = start2 + i + 1;
         tdRank.className = "rank";
@@ -186,14 +190,14 @@ function nextPage2() {
     var filteredRatings = ratings2.filter(function (rating) {
         var yearFilter =
             (filter.all ||
-                (filter.year1 && rating.year == 1) ||
-                (filter.year2 && rating.year == 2) ||
-                (filter.year3 && rating.year == 3) ||
-                (filter.year4 && rating.year == 4));
+                (filter.year1 && rating.year == fy) ||
+                (filter.year2 && rating.year == sy) ||
+                (filter.year3 && rating.year == ty) ||
+                (filter.year4 && rating.year == fry));
 
         var ratingFilter =
             selectedRatingFilter === 'all' ||
-            (selectedRatingFilter === 'lessThan1400' && rating.leetcodeRating < 1400) ||
+            (selectedRatingFilter === 'lessThan1400' && rating.leetcodeRating < 1400 && rating.leetcodeRating > 0) ||
             (selectedRatingFilter === '1400to1600' && rating.leetcodeRating >= 1400 && rating.leetcodeRating < 1600) ||
             (selectedRatingFilter === '1600to1800' && rating.leetcodeRating >= 1600 && rating.leetcodeRating < 1800) ||
             (selectedRatingFilter === '1800to2000' && rating.leetcodeRating >= 1800 && rating.leetcodeRating < 2000) ||
@@ -201,12 +205,17 @@ function nextPage2() {
             (selectedRatingFilter === '2200to2500' && rating.leetcodeRating >= 2200 && rating.leetcodeRating < 2500) ||
             (selectedRatingFilter === 'greaterThan2500' && rating.leetcodeRating >= 2500);
 
-        return yearFilter && ratingFilter;
+        var nameFilter = rating.name.toLowerCase().includes(searchQuery);
+
+        return yearFilter && ratingFilter && nameFilter && rating.leetcodeRating > 0;
     });
 
-    var totalPages = Math.ceil(filteredRatings.length / rowsPerPage2);
-
-    if (currentPage2 < totalPages) {
+    var totalPages2 = Math.ceil(filteredRatings.length / rowsPerPage2);
+    console.log(filteredRatings.length);
+    console.log(rowsPerPage2);
+    if (currentPage2 < totalPages2) {
+        console.log(currentPage2);
+        console.log(totalPages2);
         currentPage2++;
         updateScoreboard2();
     }
