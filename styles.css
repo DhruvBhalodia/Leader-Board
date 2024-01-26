@@ -86,7 +86,7 @@ tr img {
 
 
 .leaderboard h2 {
-  color: rgba(90, 104, 123, 255);
+  color: rgba(108 122 141);
   font-family: monospace;
   font-weight: bolder;
   margin-bottom: 20px;
@@ -255,7 +255,7 @@ tr td {
 
 .year,
 .stars {
-  color: rgba(90, 104, 123, 255);
+  color: rgba(108 122 141);
   font-size: 16px;
   /* Add additional styles as needed for stars */
 }
@@ -420,7 +420,8 @@ input[type="checkbox"]:checked+.custom-checkbox::after {
 .search-container {
   margin-bottom: 15px;
 }
-.search-container input{
+
+.search-container input {
   width: 300px;
 }
 
@@ -445,10 +446,27 @@ input[type="checkbox"]:checked+.custom-checkbox::after {
   display: flex;
   color: rgba(90, 104, 123, 255);
 }
-#filterContainer, #filterContainer2, #filterContainer3{
+
+#filterContainer,
+#filterContainer2,
+#filterContainer3 {
   display: none;
 }
-.filter-button, .filter-button2, .filter-button3{
+
+.filter-button,
+.filter-button2,
+.filter-button3 {
+  display: none;
+}
+.sidebar{
+  transition: left 0.2s ease-in-out;
+}
+.search-container input {
+  font-size: 14px;
+  width: 297px;
+  height: 30px;
+}
+.toggle-sidebar{
   display: none;
 }
 @media only screen and (max-width: 1300px) {
@@ -462,15 +480,17 @@ input[type="checkbox"]:checked+.custom-checkbox::after {
     display: flex;
     align-items: center;
     justify-content: center;
-    height:fit-content;
+    height: fit-content;
     position: relative;
     top: 50px;
   }
+
   img {
     height: 40px;
   }
+
   .sidebar {
-    display: none;
+    left: -200px;
   }
 
   .toggle-sidebar {
@@ -502,8 +522,12 @@ input[type="checkbox"]:checked+.custom-checkbox::after {
     /* Adjust margin to 0 when sidebar is hidden */
   }
 }
+
 @media only screen and (max-width: 913px) {
-  .filter-container, .filter-container2, .filter-container3{
+
+  .filter-container,
+  .filter-container2,
+  .filter-container3 {
     display: none;
     position: fixed;
     top: 3;
@@ -511,7 +535,9 @@ input[type="checkbox"]:checked+.custom-checkbox::after {
     overflow-y: auto;
   }
 
-  #filterContainer, #filterContainer2, #filterContainer3{
+  #filterContainer,
+  #filterContainer2,
+  #filterContainer3 {
     display: none;
     position: absolute;
     margin-right: 15px;
@@ -519,7 +545,9 @@ input[type="checkbox"]:checked+.custom-checkbox::after {
     right: 2;
   }
 
-  .filter-button, .filter-button2, .filter-button3{
+  .filter-button,
+  .filter-button2,
+  .filter-button3 {
     background-color: rgba(46, 55, 71, 255);
     color: white;
     margin-left: 15px;
@@ -548,7 +576,8 @@ input[type="checkbox"]:checked+.custom-checkbox::after {
     /* Adjust margin to 0 when sidebar is hidden */
   }
 }
-@media only screen and (max-width: 638px){
+
+@media only screen and (max-width: 638px) {
   .checkbox {
     font-size: 14px;
   }
@@ -573,39 +602,50 @@ input[type="checkbox"]:checked+.custom-checkbox::after {
     font-weight: bolder;
     margin-bottom: 20px;
   }
-  .search-container input{
-    font-size: 15px;
+
+  .search-container input {
+    font-size: 13px;
     width: 250px;
+    height: 25px;
   }
-  td.name-with-stars{
+
+  td.name-with-stars {
     font-size: 14px;
   }
-  .year, .stars{
+
+  .year,
+  .stars {
     font-size: 14px;
   }
-  .leaderboard-table table tr td:first-child{
+
+  .leaderboard-table table tr td:first-child {
     font-size: 20px;
   }
+
   .leaderboard-table table tr td.rank {
     width: 50px;
     text-align: center;
     font-weight: bold;
   }
-  .leaderboard-table table tr td{
+
+  .leaderboard-table table tr td {
     padding: 7px;
   }
-  tr td{
+
+  tr td {
     font-size: 15px;
   }
 }
-@media only screen and (max-width: 515px){
+
+@media only screen and (max-width: 515px) {
   .leaderboard-table table tr td.rank,
   .leetcode-table table tr td.rank,
-  .codeforces-table table tr td.rank{
+  .codeforces-table table tr td.rank {
     width: 30px;
     text-align: center;
     font-weight: bold;
   }
+
   .leaderboard h2 {
     font-size: 20px;
     color: rgba(90, 104, 123, 255);
@@ -613,40 +653,53 @@ input[type="checkbox"]:checked+.custom-checkbox::after {
     font-weight: bolder;
     margin-bottom: 20px;
   }
-  .search-container input{
-    font-size: 13px;
+
+  .search-container input {
+    font-size: 11px;
     width: 200px;
     height: 25px;
   }
-  td.name-with-stars{
+
+  td.name-with-stars {
     font-size: 13px;
   }
-  .year, .stars{
+
+  .year,
+  .stars {
     font-size: 13px;
     padding: 2px;
   }
-  .leaderboard-table table tr td:first-child{
+
+  .leaderboard-table table tr td:first-child {
     font-size: 17px;
   }
-  .leaderboard-table table tr td{
+
+  .leaderboard-table table tr td {
     padding: 5px;
   }
-  .separator{
+
+  .separator {
     margin: 0px 2px;
     padding: 0px;
   }
-  tr td{
+
+  tr td {
     font-size: 13px;
   }
-  .leaderboard-table table tr td{
+
+  .leaderboard-table table tr td {
     padding-right: 10px;
     padding-left: 10px;
   }
-  tr img{
+
+  tr img {
     height: 25px;
     width: 25px;
   }
-  .filter-button, .filter-button2, .filter-button3{
+
+  .filter-button,
+  .filter-button2,
+  .filter-button3 {
     font-size: 13px;
   }
 }
