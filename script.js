@@ -25,19 +25,20 @@ $(document).ready(function () {
 });
 
 function toggleSidebar() {
+  console.log('toggle')
   var sidebar = document.querySelector('.sidebar');
   var toggleSidebar = document.querySelector('.toggle-sidebar');
   var overlay = document.querySelector('.overlay');
-  if (sidebar.style.display === 'none' || sidebar.style.display === '') {
-    sidebar.style.display = 'block';
-    toggleSidebar.style.zIndex = '999';
-    sidebar.style.zIndex = '998';
-    overlay.classList.add('act');
-  } else {
-    sidebar.style.display = 'none';
+  if (sidebar.style.left === '0px') {
+    sidebar.style.left = '-200px';
     toggleSidebar.style.zIndex = '0';
     sidebar.style.zIndex = '0';
     overlay.classList.remove('act');
+  } else {
+    sidebar.style.left = '0px';
+    toggleSidebar.style.zIndex = '999';
+    sidebar.style.zIndex = '998';
+    overlay.classList.add('act');
   }
 }
 
@@ -83,11 +84,11 @@ function closes() {
     but3.style.zIndex = '0';
     filter3.style.display = 'none';
   }
-  else if(document.getElementById("sidebar").style.display === 'block'){
+  else if(document.getElementById("sidebar").style.left === '0px'){
     console.log('4');
     document.getElementById("sidebar").style.zIndex = "0";
     document.querySelector('.toggle-sidebar').style.zIndex = "0";
-    document.getElementById("sidebar").style.display = "none";
+    document.getElementById("sidebar").style.left = "-200px";
   }
   overlay.classList.remove('act');
 }
@@ -182,7 +183,7 @@ function updateScoreboard() {
 
     var nameFilter = rating.name.toLowerCase().includes(searchQuery);
 
-    return yearFilter && ratingFilter && nameFilter;
+    return yearFilter && ratingFilter && nameFilter && rating.codechefRating > 0;
   });
   // Sort the ratings by CodeChef rating before displaying
   filteredRatings.sort(function (a, b) {
@@ -199,7 +200,11 @@ function updateScoreboard() {
 
   for (var i = 0; i < paginatedRatings.length; i++) {
     var tr = document.createElement('tr');
-
+    tr.setAttribute('data-href', paginatedRatings[i].url);
+    tr.addEventListener('click', function() {
+      var url = this.getAttribute('data-href');
+      window.open(url, '_blank');
+    });
     var tdRank = document.createElement('td');
     tdRank.textContent = start + i + 1;
     tdRank.className = "rank";
@@ -259,13 +264,14 @@ function updateScoreboard() {
 }
 
 function nextPage() {
+  var searchQuery = document.getElementById('searchInput').value.toLowerCase();
   var filteredRatings = ratings.filter(function (rating) {
     var yearFilter =
       (filter.all ||
-        (filter.year1 && rating.year == 1) ||
-        (filter.year2 && rating.year == 2) ||
-        (filter.year3 && rating.year == 3) ||
-        (filter.year4 && rating.year == 4));
+        (filter.year1 && rating.year == fy) ||
+        (filter.year2 && rating.year == sy) ||
+        (filter.year3 && rating.year == ty) ||
+        (filter.year4 && rating.year == fry));
 
     var ratingFilter =
       selectedRatingFilter === 'all' ||
@@ -277,7 +283,8 @@ function nextPage() {
       (selectedRatingFilter === '2200to2500' && rating.codechefRating >= 2200 && rating.codechefRating < 2500) ||
       (selectedRatingFilter === 'greaterThan2500' && rating.codechefRating >= 2500);
 
-    return yearFilter && ratingFilter;
+    var nameFilter = rating.name.toLowerCase().includes(searchQuery);
+    return yearFilter && ratingFilter && nameFilter && rating.codechefRating > 0;
   });
 
   var totalPages = Math.ceil(filteredRatings.length / rowsPerPage);
