@@ -123,7 +123,11 @@ function updateScoreboard3() {
     console.log('hii')
     for (var i = 0; i < paginatedRatings3.length; i++) {
         var tr = document.createElement('tr');
-        console.log('hii')
+        tr.setAttribute('data-href', paginatedRatings3[i].url);
+        tr.addEventListener('click', function () {
+            var url = this.getAttribute('data-href');
+            window.open(url, '_blank');
+        });
         var tdRank = document.createElement('td');
         tdRank.textContent = start3 + i + 1;
         tdRank.className = "rank";
@@ -186,14 +190,14 @@ function nextPage3() {
     var filteredRatings = ratings3.filter(function (rating) {
         var yearFilter =
             (filter.all ||
-                (filter.year1 && rating.year == 1) ||
-                (filter.year2 && rating.year == 2) ||
-                (filter.year3 && rating.year == 3) ||
-                (filter.year4 && rating.year == 4));
+                (filter.year1 && rating.year == fy) ||
+                (filter.year2 && rating.year == sy) ||
+                (filter.year3 && rating.year == ty) ||
+                (filter.year4 && rating.year == fry));
 
         var ratingFilter =
             selectedRatingFilter === 'all' ||
-            (selectedRatingFilter === 'lessThan1400' && rating.codeforcesRating < 1400) ||
+            (selectedRatingFilter === 'lessThan1400' && rating.codeforcesRating < 1400 && rating.codeforcesRating > 0) ||
             (selectedRatingFilter === '1400to1600' && rating.codeforcesRating >= 1400 && rating.codeforcesRating < 1600) ||
             (selectedRatingFilter === '1600to1800' && rating.codeforcesRating >= 1600 && rating.codeforcesRating < 1800) ||
             (selectedRatingFilter === '1800to2000' && rating.codeforcesRating >= 1800 && rating.codeforcesRating < 2000) ||
@@ -201,12 +205,14 @@ function nextPage3() {
             (selectedRatingFilter === '2200to2500' && rating.codeforcesRating >= 2200 && rating.codeforcesRating < 2500) ||
             (selectedRatingFilter === 'greaterThan2500' && rating.codeforcesRating >= 2500);
 
-        return yearFilter && ratingFilter;
+        var nameFilter = rating.name.toLowerCase().includes(searchQuery);
+
+        return yearFilter && ratingFilter && nameFilter && rating.codeforcesRating > 0;
     });
 
-    var totalPages = Math.ceil(filteredRatings.length / rowsPerPage3);
+    var totalPages3 = Math.ceil(filteredRatings.length / rowsPerPage3);
 
-    if (currentPage3 < totalPages) {
+    if (currentPage3 < totalPages3) {
         currentPage3++;
         updateScoreboard3();
     }
