@@ -491,6 +491,7 @@ input[type="checkbox"]:checked+.custom-checkbox::after {
 
   .sidebar {
     left: -200px;
+    border-radius: 5px;
   }
 
   .toggle-sidebar {
