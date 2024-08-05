@@ -11,7 +11,7 @@ from webdriver_manager.chrome import ChromeDriverManager
 import time
 
 def get_codechef_profile_image(username):
-    url = f'https://www.codechef.com/users/{username}'
+    url = username
     response = requests.get(url)
     if response.status_code == 200:
         soup = BeautifulSoup(response.content, 'html.parser')
@@ -26,7 +26,7 @@ def get_codechef_profile_image(username):
         return "User profile not found or inaccessible"
 
 def get_leetcode_profile_image(username):
-    url = f"https://leetcode.com/{username}/"
+    url = username
     response = requests.get(url)
     if response.status_code == 200:
         soup = BeautifulSoup(response.content, 'html.parser')
@@ -41,7 +41,7 @@ def get_leetcode_profile_image(username):
         return "User profile not found or inaccessible"
 
 def get_codeforces_profile_image(username):
-    url = f"https://codeforces.com/profile/{username}/"
+    url = username
     response = requests.get(url)
     if response.status_code == 200:
         soup = BeautifulSoup(response.content, 'html.parser')
@@ -56,7 +56,7 @@ def get_codeforces_profile_image(username):
         return "User profile not found or inaccessible"
 
 def get_codechef_rating(username):
-    url = f'https://www.codechef.com/users/{username}'
+    url = username
     options = Options()
     options.add_argument('--headless')
     options.add_argument('--no-sandbox')
@@ -69,17 +69,13 @@ def get_codechef_rating(username):
     soup = BeautifulSoup(driver.page_source, 'html.parser')
     rating_element = soup.find('div', class_='rating-number')
     paths = soup.find_all('path')
-    for path in paths:
-        d_attribute = path.get('d')
-        if 'L' in d_attribute:
-            return 0
     if rating_element:
         return int(re.search(r'\d+', rating_element.text.strip()).group())
     else:
         return "Rating not found for this user"
 
 def get_leetcode_rating(username):
-    url = f"https://leetcode.com/{username}/"
+    url = username
     headers = {'User-Agent': 'Mozilla/5.0'}
     response = requests.get(url, headers=headers)
     if response.status_code == 200:
@@ -93,7 +89,7 @@ def get_leetcode_rating(username):
         return "Failed to retrieve data"
 
 def get_codeforces_rating(username):
-    url = f"https://codeforces.com/profile/{username}/"
+    url = username
     response = requests.get(url)
     if response.status_code == 200:
         soup = BeautifulSoup(response.text, 'html.parser')
@@ -107,7 +103,7 @@ def get_codeforces_rating(username):
         return f"Failed to fetch data. Status code: {response.status_code}"
 
 def total_contest_codechef(username):
-    url = f'https://www.codechef.com/users/{username}'
+    url = username
     response = requests.get(url)
     if response.status_code == 200:
         soup = BeautifulSoup(response.content, 'html.parser')
@@ -117,7 +113,7 @@ def total_contest_codechef(username):
         return "User profile not found or inaccessible"
 
 def total_contest_leetcode(username):
-    url = f"https://leetcode.com/{username}/"
+    url = username
     headers = {'User-Agent': 'Mozilla/5.0'}
     response = requests.get(url, headers=headers)
     if response.status_code == 200:
@@ -131,7 +127,7 @@ def total_contest_leetcode(username):
         return "Failed to retrieve data"
 
 def total_contest_codeforces(username):
-    url = f"https://codeforces.com/contests/with/{username}/"
+    url = username
     options = Options()
     options.add_argument('--headless')
     options.add_argument('--no-sandbox')
@@ -148,13 +144,6 @@ def total_contest_codeforces(username):
         return int(text)
     else:
         return 0
-
-def extract_id(url_or_username):
-    if "://" in url_or_username:
-        parts = url_or_username.split('/')
-        return parts[-1] if parts[-1] else parts[-2]
-    else:
-        return url_or_username
 
 def get_star_rating(rating):
     if rating < 1400:
@@ -173,7 +162,7 @@ def get_star_rating(rating):
         return "⭐⭐⭐⭐⭐⭐⭐"
 
 def get_user_top(username):
-    url = f"https://leetcode.com/{username}/"
+    url = username
     options = Options()
     options.add_argument('--headless')
     options.add_argument('--no-sandbox')
@@ -226,14 +215,20 @@ for _, user in df.iterrows():
     username = ""
     year = int(re.search(r'\d+', user['Email']).group()[:4])
     if pd.notna(user['CodeChef ID']) and user['CodeChef ID']:
-        username = extract_id(user['CodeChef ID'])
+        username = user['CodeChef ID']
     else:
         continue
 
     rating = get_codechef_rating(username)
-    rating = int(rating)
-    star = get_star_rating(rating)
-    total_contests = total_contest_codechef(username)
+    star = ""
+    total_contest = 0
+    try:
+        rating = int(rating)
+        star = get_star_rating(rating)
+        total_contests = total_contest_codechef(username)
+    except:
+        rating = 0
+        print("rating doesn't exist")
     if total_contests:
         total_contests = int(total_contests)
 
@@ -243,8 +238,8 @@ for _, user in df.iterrows():
         "stars": star,
         "codechefRating": rating,
         "totalContest": total_contests,
-        "img":get_codechef_profile_image(username),
-        "url":"https://www.codechef.com/users/"+username
+        "img": get_codechef_profile_image(username),
+        "url": username
     })
 
 # Write CodeChef data to JSON file
@@ -256,14 +251,20 @@ output_data = []
 
 for _, user in df.iterrows():
     username = ""
+    rating = 0
+    contests = 0
+    star = 0
     year = int(re.search(r'\d+', user['Email']).group()[:4])
     if pd.notna(user['LeetCode ID']) and user['LeetCode ID']:
-        username = extract_id(user['LeetCode ID'])
+        username = user['LeetCode ID']
     else:
         continue
-    rating = int(get_leetcode_rating(username).replace(',',''))
-    star = "Top " + get_user_top(username) + "%"
-    contests = total_contest_leetcode(username)
+    try:
+        rating = int(get_leetcode_rating(username).replace(',',''))
+        star = "Top " + get_user_top(username) + "%"
+        contests = total_contest_leetcode(username)
+    except:
+        print("rating not exist")
     output_user_data = {
         "name": user['Name (First & Last Name)'],
         "year": year,
@@ -272,7 +273,7 @@ for _, user in df.iterrows():
         "leetcodeRating": rating,
         "totalContest": contests,
         "img":get_leetcode_profile_image(username),
-        "url":"https://www.leetcode.com/"+username
+        "url": username
     }
     output_data.append(output_user_data)
     print(f"{user['Name (First & Last Name)']} {rating}")
@@ -285,14 +286,20 @@ output_data = []
 
 for _, user in df.iterrows():
     username = ""
+    rating = 0
+    contests = 0
+    star = 0
     year = int(re.search(r'\d+', user['Email']).group()[:4])
     if pd.notna(user['CodeForces ID']) and user['CodeForces ID']:
         username = extract_id(user['CodeForces ID'])
     else:
         continue
-    rating = get_codeforces_rating(username)
-    contests = total_contest_codeforces(username)
-    star = get_div_codeforces(rating)
+    try:
+        rating = get_codeforces_rating(username)
+        contests = total_contest_codeforces(username)
+        star = get_div_codeforces(rating)
+    except:
+        print("rating not exist")
     output_user_data = {
         "name": user['Name (First & Last Name)'],
         "year" : year,
@@ -301,7 +308,7 @@ for _, user in df.iterrows():
         "codeforcesRating": rating,
         "totalContest": contests,
         "img":get_codeforces_profile_image(username),
-        "url":"https://codeforces.com/profile/"+username
+        "url": username
     }
     output_data.append(output_user_data)
     print(f"{user['Name (First & Last Name)']} {rating}")
