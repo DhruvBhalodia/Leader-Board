@@ -19,7 +19,7 @@ def get_codechef_profile_image(username):
         if profile_image_element:
             profile_image_url = profile_image_element['src']
             profile_image_url = urljoin(url, profile_image_url)
-            return profile_image_url
+            return "codechef.jpg"
         else:
             return "Profile image not found for this user"
     else:
@@ -226,12 +226,12 @@ for _, user in df.iterrows():
         rating = int(rating)
         star = get_star_rating(rating)
         total_contests = total_contest_codechef(username)
+        if total_contests:
+            total_contests = int(total_contests)
     except:
         rating = 0
         print("rating doesn't exist")
-    if total_contests:
-        total_contests = int(total_contests)
-
+    
     output_data.append({
         "name": user['Name (First & Last Name)'],
         "year": year,
