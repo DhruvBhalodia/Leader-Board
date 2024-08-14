@@ -221,7 +221,7 @@ for _, user in df.iterrows():
 
     rating = get_codechef_rating(username)
     star = ""
-    total_contest = 0
+    total_contests = 0
     try:
         rating = int(rating)
         star = get_star_rating(rating)
