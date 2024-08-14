@@ -265,6 +265,7 @@ for _, user in df.iterrows():
         contests = total_contest_leetcode(username)
     except:
         print("rating not exist")
+        
     output_user_data = {
         "name": user['Name (First & Last Name)'],
         "year": year,
@@ -291,7 +292,7 @@ for _, user in df.iterrows():
     star = 0
     year = int(re.search(r'\d+', user['Email']).group()[:4])
     if pd.notna(user['CodeForces ID']) and user['CodeForces ID']:
-        username = extract_id(user['CodeForces ID'])
+        username = user['CodeForces ID']
     else:
         continue
     try:
@@ -300,6 +301,7 @@ for _, user in df.iterrows():
         star = get_div_codeforces(rating)
     except:
         print("rating not exist")
+        
     output_user_data = {
         "name": user['Name (First & Last Name)'],
         "year" : year,
