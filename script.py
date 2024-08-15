@@ -86,9 +86,10 @@ def get_leetcode_rating(username):
     driver.get(url)
     time.sleep(10)
     soup = BeautifulSoup(driver.page_source, 'html.parser')
-    rating_element = soup.find('div', {'class': 'text-label-1 dark:text-dark-label-1 flex items-center text-2xl'})
-    if rating_element:
-        return rating_element.text.strip()
+    rating_element = soup.find_all('div', {'class': 'text-label-1 dark:text-dark-label-1 flex items-center text-2xl'})
+    print(rating_element)
+    if rating_element[0]:
+        return rating_element[0].text.strip()
     else:
         return "-1"
 
@@ -104,9 +105,10 @@ def get_codeforces_rating(username):
     driver.get(url)
     time.sleep(10)
     soup = BeautifulSoup(driver.page_source, 'html.parser')
-    rating_element = soup.find('span', style='font-weight:bold;')
-    if rating_element:
-        rating = rating_element.get_text(strip=True)
+    rating_element = soup.find_all('span', style='font-weight:bold;')
+    print(rating_element)
+    if rating_element[0]:
+        rating = rating_element[0].get_text(strip=True)
         return int(rating)
     else:
         return -1
