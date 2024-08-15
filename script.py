@@ -76,31 +76,40 @@ def get_codechef_rating(username):
 
 def get_leetcode_rating(username):
     url = username
-    headers = {'User-Agent': 'Mozilla/5.0'}
-    response = requests.get(url, headers=headers)
-    if response.status_code == 200:
-        soup = BeautifulSoup(response.content, 'html.parser')
-        rating_element = soup.find('div', {'class': 'text-label-1 dark:text-dark-label-1 flex items-center text-2xl'})
-        if rating_element:
-            return rating_element.text.strip()
-        else:
-            return "-1"
+    options = Options()
+    options.add_argument('--headless')
+    options.add_argument('--no-sandbox')
+    options.add_argument('--disable-dev-shm-usage')
+
+    service = Service(ChromeDriverManager().install())
+    driver = webdriver.Chrome(service=service, options=options)
+    driver.get(url)
+    time.sleep(5)
+    soup = BeautifulSoup(driver.page_source, 'html.parser')
+    rating_element = soup.find('div', {'class': 'text-label-1 dark:text-dark-label-1 flex items-center text-2xl'})
+    if rating_element:
+        return rating_element.text.strip()
     else:
-        return "Failed to retrieve data"
+        return "-1"
 
 def get_codeforces_rating(username):
     url = username
-    response = requests.get(url)
-    if response.status_code == 200:
-        soup = BeautifulSoup(response.text, 'html.parser')
-        rating_element = soup.find('span', style='font-weight:bold;')
-        if rating_element:
-            rating = rating_element.get_text(strip=True)
-            return int(rating)
-        else:
-            return 0
+    options = Options()
+    options.add_argument('--headless')
+    options.add_argument('--no-sandbox')
+    options.add_argument('--disable-dev-shm-usage')
+
+    service = Service(ChromeDriverManager().install())
+    driver = webdriver.Chrome(service=service, options=options)
+    driver.get(url)
+    time.sleep(5)
+    soup = BeautifulSoup(driver.page_source, 'html.parser')
+    rating_element = soup.find('span', style='font-weight:bold;')
+    if rating_element:
+        rating = rating_element.get_text(strip=True)
+        return int(rating)
     else:
-        return f"Failed to fetch data. Status code: {response.status_code}"
+        return -1
 
 def total_contest_codechef(username):
     url = username
