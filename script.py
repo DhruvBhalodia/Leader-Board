@@ -204,7 +204,7 @@ def get_div_codeforces(rating):
         return "Legendary Grandmaster"
 
 # Read input data from input Excel file
-excel_file = 'ID.xlsx' 
+excel_file = 'Sheet.xlsx' 
 df = pd.read_excel(excel_file)
 
 # Process CodeChef data
