@@ -94,7 +94,7 @@ def get_leetcode_rating(username):
             EC.presence_of_element_located((By.CSS_SELECTOR, 'div.text-label-1.dark:text-dark-label-1.flex.items-center.text-2xl'))
         )
         soup = BeautifulSoup(driver.page_source, 'html.parser')
-        rating_element = soup.find('div', {'class': 'text-label-1 dark:text-dark-label-1 flex items-center text-2xl'})
+        rating_element = soup.find('div', class_='text-label-1 dark:text-dark-label-1 flex items-center text-2xl')
         if rating_element:
             return rating_element.text.strip()
         else:
