@@ -7,6 +7,10 @@ import json
 from selenium import webdriver
 from selenium.webdriver.chrome.service import Service
 from selenium.webdriver.chrome.options import Options
+from selenium.webdriver.common.by import By
+from selenium.webdriver.support.ui import WebDriverWait
+from selenium.webdriver.support import expected_conditions as EC
+from selenium.webdriver.common.keys import Keys
 from webdriver_manager.chrome import ChromeDriverManager
 import time
 
@@ -75,7 +79,7 @@ def get_codechef_rating(username):
         return "Rating not found for this user"
 
 def get_leetcode_rating(username):
-    url = username
+    url = f'https://leetcode.com/{username}/'
     options = Options()
     options.add_argument('--headless')
     options.add_argument('--no-sandbox')
@@ -83,15 +87,25 @@ def get_leetcode_rating(username):
 
     service = Service(ChromeDriverManager().install())
     driver = webdriver.Chrome(service=service, options=options)
-    driver.get(url)
-    time.sleep(10)
-    soup = BeautifulSoup(driver.page_source, 'html.parser')
-    rating_element = soup.find_all('div', {'class': 'text-label-1 dark:text-dark-label-1 flex items-center text-2xl'})
-    print(rating_element)
-    if rating_element[0]:
-        return rating_element[0].text.strip()
-    else:
+    
+    try:
+        driver.get(url)
+        WebDriverWait(driver, 20).until(
+            EC.presence_of_element_located((By.CSS_SELECTOR, 'div.text-label-1.dark:text-dark-label-1.flex.items-center.text-2xl'))
+        )
+        soup = BeautifulSoup(driver.page_source, 'html.parser')
+        rating_element = soup.find('div', {'class': 'text-label-1 dark:text-dark-label-1 flex items-center text-2xl'})
+        if rating_element:
+            return rating_element.text.strip()
+        else:
+            return "-1"
+    
+    except Exception as e:
+        print(f"An error occurred: {e}")
         return "-1"
+    
+    finally:
+        driver.quit()
 
 def get_codeforces_rating(username):
     url = username
