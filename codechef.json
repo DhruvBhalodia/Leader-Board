@@ -95,16 +95,16 @@
         "stars": "",
         "codechefRating": 0,
         "totalContest": 0,
-        "img": "User profile not found or inaccessible",
+        "img": "Profile image not found for this user",
         "url": "https://www.codechef.com/users/jigyashuguptaa"
     },
     {
         "name": "Abhijeet Yadav",
         "year": 2023,
-        "stars": "\u2b50",
+        "stars": "",
         "codechefRating": 0,
-        "totalContest": "User profile not found or inaccessible",
-        "img": "User profile not found or inaccessible",
+        "totalContest": 0,
+        "img": "codechef.jpg",
         "url": "https://www.codechef.com/users/coderabhi002"
     },
     {
@@ -158,7 +158,7 @@
         "stars": "",
         "codechefRating": 0,
         "totalContest": 0,
-        "img": "codechef.jpg",
+        "img": "User profile not found or inaccessible",
         "url": "https://www.codechef.com/users/eveecameron707"
     },
     {
@@ -176,15 +176,15 @@
         "stars": "",
         "codechefRating": 0,
         "totalContest": 0,
-        "img": "Profile image not found for this user",
+        "img": "User profile not found or inaccessible",
         "url": "https://www.codechef.com/users/username :  yanshu_011"
     },
     {
         "name": "Ishita Agarwal",
         "year": 2021,
-        "stars": "",
+        "stars": "\u2b50\u2b50",
         "codechefRating": 0,
-        "totalContest": 0,
+        "totalContest": "User profile not found or inaccessible",
         "img": "codechef.jpg",
         "url": "https://www.codechef.com/users/ishita_139"
     },
@@ -194,7 +194,7 @@
         "stars": "",
         "codechefRating": 0,
         "totalContest": 0,
-        "img": "codechef.jpg",
+        "img": "User profile not found or inaccessible",
         "url": "https://www.codechef.com/users/Keyur_Rathod"
     },
     {
@@ -392,16 +392,16 @@
         "stars": "",
         "codechefRating": 0,
         "totalContest": 0,
-        "img": "User profile not found or inaccessible",
+        "img": "Profile image not found for this user",
         "url": "https://www.codechef.com/users/Pixel_Perception "
     },
     {
         "name": "Ayush Gupta",
         "year": 2022,
-        "stars": "\u2b50",
+        "stars": "",
         "codechefRating": 0,
-        "totalContest": "User profile not found or inaccessible",
-        "img": "User profile not found or inaccessible",
+        "totalContest": 0,
+        "img": "codechef.jpg",
         "url": "https://www.codechef.com/users/ayush91003"
     },
     {
@@ -563,7 +563,7 @@
         "stars": "",
         "codechefRating": 0,
         "totalContest": 0,
-        "img": "codechef.jpg",
+        "img": "User profile not found or inaccessible",
         "url": "https://www.codechef.com/users/bhargavii_03"
     },
     {
