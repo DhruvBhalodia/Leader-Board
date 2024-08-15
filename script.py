@@ -84,7 +84,7 @@ def get_leetcode_rating(username):
     service = Service(ChromeDriverManager().install())
     driver = webdriver.Chrome(service=service, options=options)
     driver.get(url)
-    time.sleep(5)
+    time.sleep(10)
     soup = BeautifulSoup(driver.page_source, 'html.parser')
     rating_element = soup.find('div', {'class': 'text-label-1 dark:text-dark-label-1 flex items-center text-2xl'})
     if rating_element:
@@ -102,7 +102,7 @@ def get_codeforces_rating(username):
     service = Service(ChromeDriverManager().install())
     driver = webdriver.Chrome(service=service, options=options)
     driver.get(url)
-    time.sleep(5)
+    time.sleep(10)
     soup = BeautifulSoup(driver.page_source, 'html.parser')
     rating_element = soup.find('span', style='font-weight:bold;')
     if rating_element:
