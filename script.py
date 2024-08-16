@@ -95,11 +95,8 @@ def get_leetcode_rating(username):
             EC.presence_of_all_elements_located((By.CSS_SELECTOR, f'div.{class_name}'))
         )
         for element in elements:
-            return element.text
-        # if rating_element:
-        #     return rating_element.text.strip()
-        # else:
-        #     return "-1"
+            print(element.text)
+        return "-1"
     
     except Exception as e:
         print(f"An error occurred: {e}")
@@ -311,40 +308,40 @@ for _, user in df.iterrows():
 with open(output_json, 'w') as file:
     json.dump(output_data, file, indent=4)
 
-output_json = 'codeforces.json'
-output_data = []
+# output_json = 'codeforces.json'
+# output_data = []
 
-for _, user in df.iterrows():
-    username = ""
-    rating = 0
-    contests = 0
-    star = 0
-    year = int(re.search(r'\d+', user['Email']).group()[:4])
-    if pd.notna(user['CodeForces ID']) and user['CodeForces ID']:
-        username = user['CodeForces ID']
-    else:
-        continue
-    try:
-        rating = get_codeforces_rating(username)
-        contests = total_contest_codeforces(username)
-        star = get_div_codeforces(rating)
-    except:
-        print("rating not exist")
+# for _, user in df.iterrows():
+#     username = ""
+#     rating = 0
+#     contests = 0
+#     star = 0
+#     year = int(re.search(r'\d+', user['Email']).group()[:4])
+#     if pd.notna(user['CodeForces ID']) and user['CodeForces ID']:
+#         username = user['CodeForces ID']
+#     else:
+#         continue
+#     try:
+#         rating = get_codeforces_rating(username)
+#         contests = total_contest_codeforces(username)
+#         star = get_div_codeforces(rating)
+#     except:
+#         print("rating not exist")
         
-    output_user_data = {
-        "name": user['Name (First & Last Name)'],
-        "year" : year,
-        "id": username,
-        "stars": star,
-        "codeforcesRating": rating,
-        "totalContest": contests,
-        "img":get_codeforces_profile_image(username),
-        "url": username
-    }
-    output_data.append(output_user_data)
-    print(f"{user['Name (First & Last Name)']} {rating}")
+#     output_user_data = {
+#         "name": user['Name (First & Last Name)'],
+#         "year" : year,
+#         "id": username,
+#         "stars": star,
+#         "codeforcesRating": rating,
+#         "totalContest": contests,
+#         "img":get_codeforces_profile_image(username),
+#         "url": username
+#     }
+#     output_data.append(output_user_data)
+#     print(f"{user['Name (First & Last Name)']} {rating}")
 
-with open(output_json, 'w') as file:
-    json.dump(output_data, file, indent=4)
+# with open(output_json, 'w') as file:
+#     json.dump(output_data, file, indent=4)
 
-print(f"Data written to {output_json}")
+# print(f"Data written to {output_json}")
