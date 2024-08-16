@@ -307,40 +307,40 @@ for _, user in df.iterrows():
 with open(output_json, 'w') as file:
     json.dump(output_data, file, indent=4)
 
-output_json = 'codeforces.json'
-output_data = []
+# output_json = 'codeforces.json'
+# output_data = []
 
-for _, user in df.iterrows():
-    username = ""
-    rating = 0
-    contests = 0
-    star = 0
-    year = int(re.search(r'\d+', user['Email']).group()[:4])
-    if pd.notna(user['CodeForces ID']) and user['CodeForces ID']:
-        username = user['CodeForces ID']
-    else:
-        continue
-    try:
-        rating = get_codeforces_rating(username)
-        contests = total_contest_codeforces(username)
-        star = get_div_codeforces(rating)
-    except:
-        print("rating not exist")
+# for _, user in df.iterrows():
+#     username = ""
+#     rating = 0
+#     contests = 0
+#     star = 0
+#     year = int(re.search(r'\d+', user['Email']).group()[:4])
+#     if pd.notna(user['CodeForces ID']) and user['CodeForces ID']:
+#         username = user['CodeForces ID']
+#     else:
+#         continue
+#     try:
+#         rating = get_codeforces_rating(username)
+#         contests = total_contest_codeforces(username)
+#         star = get_div_codeforces(rating)
+#     except:
+#         print("rating not exist")
         
-    output_user_data = {
-        "name": user['Name (First & Last Name)'],
-        "year" : year,
-        "id": username,
-        "stars": star,
-        "codeforcesRating": rating,
-        "totalContest": contests,
-        "img":get_codeforces_profile_image(username),
-        "url": username
-    }
-    output_data.append(output_user_data)
-    print(f"{user['Name (First & Last Name)']} {rating}")
+#     output_user_data = {
+#         "name": user['Name (First & Last Name)'],
+#         "year" : year,
+#         "id": username,
+#         "stars": star,
+#         "codeforcesRating": rating,
+#         "totalContest": contests,
+#         "img":get_codeforces_profile_image(username),
+#         "url": username
+#     }
+#     output_data.append(output_user_data)
+#     print(f"{user['Name (First & Last Name)']} {rating}")
 
-with open(output_json, 'w') as file:
-    json.dump(output_data, file, indent=4)
+# with open(output_json, 'w') as file:
+#     json.dump(output_data, file, indent=4)
 
-print(f"Data written to {output_json}")
+# print(f"Data written to {output_json}")
