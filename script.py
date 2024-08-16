@@ -91,6 +91,7 @@ def get_leetcode_rating(username):
     try:
         driver.get(url)
         class_name = 'text-label-1.dark\\:text-dark-label-1.flex.items-center.text-2xl'
+        print(class_name)
         elements = WebDriverWait(driver, 10).until(
             EC.presence_of_all_elements_located((By.CSS_SELECTOR, f'div.{class_name}'))
         )
