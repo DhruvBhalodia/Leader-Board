@@ -91,7 +91,7 @@ def get_leetcode_rating(username):
     try:
         driver.get(url)
         WebDriverWait(driver, 20).until(
-            EC.presence_of_element_located((By.CSS_SELECTOR, 'div.text-label-1.dark:text-dark-label-1.flex.items-center.text-2xl'))
+            EC.presence_of_element_located((By.CSS_SELECTOR, 'div.text-label-1.dark\\:text-dark-label-1.flex.items-center.text-2xl'))
         )
         soup = BeautifulSoup(driver.page_source, 'html.parser')
         rating_element = soup.find('div', class_='text-label-1 dark:text-dark-label-1 flex items-center text-2xl')
