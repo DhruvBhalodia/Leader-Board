@@ -79,7 +79,7 @@ def get_codechef_rating(username):
         return "-1"
 
 def get_leetcode_rating(username):
-    url = f'https://leetcode.com/{username}/'
+    url = username
     options = Options()
     options.add_argument('--headless')
     options.add_argument('--no-sandbox')
