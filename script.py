@@ -96,10 +96,10 @@ def get_leetcode_rating(username):
         )
         for element in elements:
             print(element.text)
-        if rating_element:
-            return rating_element.text.strip()
-        else:
-            return "-1"
+        # if rating_element:
+        #     return rating_element.text.strip()
+        # else:
+        #     return "-1"
     
     except Exception as e:
         print(f"An error occurred: {e}")
