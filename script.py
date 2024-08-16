@@ -90,13 +90,12 @@ def get_leetcode_rating(username):
     
     try:
         driver.get(url)
-        time.sleep(20)
-        print(driver.page_source)
-        WebDriverWait(driver, 20).until(
-            EC.presence_of_element_located((By.CSS_SELECTOR, 'div.text-label-1.dark\\:text-dark-label-1.flex.items-center.text-2xl'))
+        class_name = 'text-label-1.dark\\:text-dark-label-1.flex.items-center.text-2xl'
+        elements = WebDriverWait(driver, 10).until(
+            EC.presence_of_all_elements_located((By.CSS_SELECTOR, f'div.{class_name}'))
         )
-        soup = BeautifulSoup(driver.page_source, 'html.parser')
-        rating_element = soup.find('div', class_='text-label-1 dark:text-dark-label-1 flex items-center text-2xl')
+        for element in elements:
+            print(element.text)
         if rating_element:
             return rating_element.text.strip()
         else:
