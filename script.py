@@ -95,7 +95,7 @@ def get_leetcode_rating(username):
             EC.presence_of_all_elements_located((By.CSS_SELECTOR, f'div.{class_name}'))
         )
         for element in elements:
-            print(element.text)
+            return element.text
         # if rating_element:
         #     return rating_element.text.strip()
         # else:
