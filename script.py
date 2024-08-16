@@ -90,6 +90,8 @@ def get_leetcode_rating(username):
     
     try:
         driver.get(url)
+        time.sleep(20)
+        print(driver.page_source)
         WebDriverWait(driver, 20).until(
             EC.presence_of_element_located((By.CSS_SELECTOR, 'div.text-label-1.dark\\:text-dark-label-1.flex.items-center.text-2xl'))
         )
