@@ -1,11 +1,10 @@
-# Instructions are taken from https://nander.cc/using-selenium-within-a-docker-container
-from selenium.webdriver.chrome.options import Options
 from selenium import webdriver
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 import time
 
+# Set up the WebDriver (this example uses Chrome)
 driver = webdriver.Chrome()
 
 driver.get("https://leetcode.com/u/daivik_hirpara/")
@@ -17,9 +16,7 @@ for _ in range(3):  # Retry 3 times
         )
         if elements:
             print("hii")
-            break
     except Exception:
         time.sleep(2)  # Wait before retrying
 
-print("Completed")
 driver.close()
