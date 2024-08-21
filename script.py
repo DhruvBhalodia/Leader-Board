@@ -133,10 +133,10 @@ for _, user in df.iterrows():
         "name": user['Name (First & Last Name)'],
         "year": user["Year of Joining the Institute "],
         "id": username,
-        "stars": star,
+        "stars": "Top " + star + "%",
         "leetcodeRating": round(rating),
         "totalContest": total,
-        "img": "leetcode.png",
+        "img": "leetcode.jpg",
         "url": user["Leetcode ID"]
     }
     output_data.append(output_user_data)
