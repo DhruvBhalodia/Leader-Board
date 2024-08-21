@@ -39,27 +39,32 @@ def get_codechef_profile(username):
         soup = BeautifulSoup(response, 'html.parser')
         rating = soup.find('div', class_='rating-number')
         src = "codechef.jpg"
-        star = ""
+        star = " "
         total = 0
         if rating:
-            rating = int(rating.text)
             total = soup.find('div', class_='contest-participated-count')
-            total = total.text.strip()
-            total = int(''.join(filter(str.isdigit, total)))
-            if rating < 1400:
-                star = "⭐"
-            elif rating < 1600:
-                star = "⭐⭐"
-            elif rating < 1800:
-                star = "⭐⭐⭐"
-            elif rating < 2000:
-                star = "⭐⭐⭐⭐"
-            elif rating < 2200:
-                star = "⭐⭐⭐⭐⭐"
-            elif rating < 2500:
-                star = "⭐⭐⭐⭐⭐⭐"
+            if(total):
+                total_text = total.text
+                total_number_str = total_text.split(":")[1].strip()
+                total = int(total_number_str)
+            if(total and total > 5):
+                rating = int(rating.text)
+                if rating < 1400:
+                    star = "⭐"
+                elif rating < 1600:
+                    star = "⭐⭐"
+                elif rating < 1800:
+                    star = "⭐⭐⭐"
+                elif rating < 2000:
+                    star = "⭐⭐⭐⭐"
+                elif rating < 2200:
+                    star = "⭐⭐⭐⭐⭐"
+                elif rating < 2500:
+                    star = "⭐⭐⭐⭐⭐⭐"
+                else:
+                    star = "⭐⭐⭐⭐⭐⭐⭐"
             else:
-                star = "⭐⭐⭐⭐⭐⭐⭐"
+                rating = -1
         else:
             rating = -1
         obj = {
@@ -91,6 +96,7 @@ for _, user in df.iterrows():
     else:
         continue
     obj = get_codechef_profile(user["Codechef ID"])
+    print(username)
     output_user_data = {
         "name": user['Name (First & Last Name)'],
         "year": user["Year of Joining the Institute "],
@@ -106,6 +112,7 @@ for _, user in df.iterrows():
 with open(output_json, 'w') as file:
     json.dump(output_data, file, indent=4)
 
+print("leetcode")
 output_json = 'leetcode.json'
 output_data = []
 
@@ -115,6 +122,7 @@ for _, user in df.iterrows():
         username = extract_id(user['Leetcode ID'])
     else:
         continue
+    print(username)
     res = leetcode_respose(username)
     rating = 0
     star = ""
@@ -133,10 +141,10 @@ for _, user in df.iterrows():
         "name": user['Name (First & Last Name)'],
         "year": user["Year of Joining the Institute "],
         "id": username,
-        "stars": "Top " + str(star) + "%",
+        "stars": star,
         "leetcodeRating": round(rating),
         "totalContest": total,
-        "img": "leetcode.jpg",
+        "img": "leetcode.png",
         "url": user["Leetcode ID"]
     }
     output_data.append(output_user_data)
@@ -144,6 +152,7 @@ for _, user in df.iterrows():
 with open(output_json, 'w') as file:
     json.dump(output_data, file, indent=4)
 
+print("codeforces")
 output_json = 'codeforces.json'
 output_data = []
 
@@ -153,6 +162,7 @@ for _, user in df.iterrows():
         username = extract_id(user['Codeforces ID'])
     else:
         continue
+    print(username)
     response = codeforces_responce(username)
     rating = 0
     star = ""
