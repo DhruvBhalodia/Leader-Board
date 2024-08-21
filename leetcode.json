@@ -3,20 +3,20 @@
         "name": "Saurabh Jaiswar",
         "year": 2022,
         "id": "sasaurabh11",
-        "stars": 4.12,
+        "stars": "Top 4.12%",
         "leetcodeRating": 1917,
         "totalContest": 47,
-        "img": "leetcode.png",
+        "img": "leetcode.jpg",
         "url": "https://leetcode.com/sasaurabh11/"
     },
     {
         "name": "Yashesh Bhavsar",
         "year": 2020,
         "id": "ForgottenSemicolon",
-        "stars": 0.63,
+        "stars": "Top 0.63%",
         "leetcodeRating": 2307,
         "totalContest": 124,
-        "img": "leetcode.png",
+        "img": "leetcode.jpg",
         "url": "https://leetcode.com/ForgottenSemicolon/"
     }
 ]
