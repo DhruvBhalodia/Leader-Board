@@ -2,21 +2,21 @@
     {
         "name": "Saurabh Jaiswar",
         "year": 2022,
-        "id": "https://leetcode.com/sasaurabh11/",
-        "stars": "Top Element not found%",
-        "leetcodeRating": -1,
-        "totalContest": "Failed to retrieve data",
-        "img": "User profile not found or inaccessible",
+        "id": "sasaurabh11",
+        "stars": 4.12,
+        "leetcodeRating": 1917,
+        "totalContest": 47,
+        "img": "leetcode.png",
         "url": "https://leetcode.com/sasaurabh11/"
     },
     {
         "name": "Yashesh Bhavsar",
         "year": 2020,
-        "id": "https://leetcode.com/ForgottenSemicolon/",
-        "stars": "Top Element not found%",
-        "leetcodeRating": -1,
-        "totalContest": "Failed to retrieve data",
-        "img": "User profile not found or inaccessible",
+        "id": "ForgottenSemicolon",
+        "stars": 0.63,
+        "leetcodeRating": 2307,
+        "totalContest": 124,
+        "img": "leetcode.png",
         "url": "https://leetcode.com/ForgottenSemicolon/"
     }
 ]

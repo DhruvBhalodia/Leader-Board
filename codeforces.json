@@ -2,21 +2,21 @@
     {
         "name": "Saurabh Jaiswar",
         "year": 2022,
-        "id": "https://codeforces.com/profile/sasaurabh11",
-        "stars": 0,
-        "codeforcesRating": 0,
-        "totalContest": 0,
-        "img": "User profile not found or inaccessible",
+        "id": "sasaurabh11",
+        "stars": "newbie",
+        "codeforcesRating": 1072,
+        "totalContest": 10,
+        "img": "https://userpic.codeforces.org/3063964/title/f882c3ddc4453595.jpg",
         "url": "https://codeforces.com/profile/sasaurabh11"
     },
     {
         "name": "Yashesh Bhavsar",
         "year": 2020,
-        "id": "https://codeforces.com/profile/yashesh_07",
-        "stars": 0,
-        "codeforcesRating": 0,
-        "totalContest": 0,
-        "img": "User profile not found or inaccessible",
+        "id": "yashesh_07",
+        "stars": "expert",
+        "codeforcesRating": 1704,
+        "totalContest": 10,
+        "img": "https://userpic.codeforces.org/2498034/title/69ecbe8964cd9e0a.jpg",
         "url": "https://codeforces.com/profile/yashesh_07"
     }
 ]
