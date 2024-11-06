@@ -34,7 +34,7 @@ def codeforces_responce(username):
 def get_codechef_profile(username):
     url = username
     response = requests.get(url)
-    if response.status_code == 200:
+    if response.status_code < 300:
         response = response.text
         soup = BeautifulSoup(response, 'html.parser')
         rating = soup.find('div', class_='rating-number')
@@ -96,6 +96,8 @@ for _, user in df.iterrows():
     else:
         continue
     obj = get_codechef_profile(user["Codechef ID"])
+    if(obj == -1) :
+        continue
     print(username)
     output_user_data = {
         "name": user['Name (First & Last Name)'],
