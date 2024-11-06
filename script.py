@@ -34,7 +34,7 @@ def codeforces_responce(username):
 def get_codechef_profile(username):
     url = username
     response = requests.get(url)
-    if response.status_code < 300:
+    if response.status_code == 200:
         response = response.text
         soup = BeautifulSoup(response, 'html.parser')
         rating = soup.find('div', class_='rating-number')
