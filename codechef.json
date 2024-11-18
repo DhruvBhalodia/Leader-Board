@@ -98,5 +98,15 @@
         "totalContest": 16,
         "img": "codechef.jpg",
         "url": "https://www.codechef.com/users/mr_mojilo"
+    },
+    {
+        "name": "Lakshay Dhiman",
+        "year": 2022,
+        "id": "ackermanlevi02",
+        "stars": "\u2b50\u2b50\u2b50",
+        "codechefRating": 1759,
+        "totalContest": 26,
+        "img": "codechef.jpg",
+        "url": "https://www.codechef.com/users/ackermanlevi02"
     }
 ]
