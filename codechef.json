@@ -98,5 +98,65 @@
         "totalContest": 16,
         "img": "codechef.jpg",
         "url": "https://www.codechef.com/users/mr_mojilo"
+    },
+    {
+        "name": "OMNI MANWANI",
+        "year": 2022,
+        "id": "omnimanwani17",
+        "stars": "\u2b50",
+        "codechefRating": 1378,
+        "totalContest": 7,
+        "img": "codechef.jpg",
+        "url": "https://www.codechef.com/users/omnimanwani17"
+    },
+    {
+        "name": "yanshu patel",
+        "year": 2023,
+        "id": "yanshu_011",
+        "stars": " ",
+        "codechefRating": -1,
+        "totalContest": 1,
+        "img": "codechef.jpg",
+        "url": "https://www.codechef.com/users/yanshu_011"
+    },
+    {
+        "name": "Heet Ladani",
+        "year": 2023,
+        "id": "unsolved_heet",
+        "stars": " ",
+        "codechefRating": -1,
+        "totalContest": 5,
+        "img": "codechef.jpg",
+        "url": "https://www.codechef.com/users/unsolved_heet"
+    },
+    {
+        "name": "K Hasini Reddy",
+        "year": 2023,
+        "id": "hasinii",
+        "stars": " ",
+        "codechefRating": -1,
+        "totalContest": 1,
+        "img": "codechef.jpg",
+        "url": "https://www.codechef.com/users/hasinii"
+    },
+    {
+        "name": "Devansh Venkatesh",
+        "year": 2023,
+        "id": "devanshadhini",
+        "stars": " ",
+        "codechefRating": -1,
+        "totalContest": 0,
+        "img": "codechef.jpg",
+        "url": "https://www.codechef.com/users/devanshadhini"
+    },
+    {
+        "name": "Shreya Tiwari",
+        "year": 2023,
+        "id": "shreyatiwari15",
+        "stars": "\u2b50",
+        "codechefRating": 1179,
+        "totalContest": 25,
+        "img": "codechef.jpg",
+        "url": "https://www.codechef.com/users/shreyatiwari15"
     }
 ]
