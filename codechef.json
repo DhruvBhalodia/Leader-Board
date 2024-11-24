@@ -98,5 +98,25 @@
         "totalContest": 16,
         "img": "codechef.jpg",
         "url": "https://www.codechef.com/users/mr_mojilo"
+    },
+    {
+        "name": "Akarshhan Kumar",
+        "year": 2023,
+        "id": "thakrishhkumar",
+        "stars": "\u2b50",
+        "codechefRating": 1370,
+        "totalContest": 21,
+        "img": "codechef.jpg",
+        "url": "https://www.codechef.com/users/thakrishhkumar"
+    },
+    {
+        "name": "Shreya Tiwari",
+        "year": 2023,
+        "id": "shreyatiwari15",
+        "stars": "\u2b50",
+        "codechefRating": 1179,
+        "totalContest": 25,
+        "img": "codechef.jpg",
+        "url": "https://www.codechef.com/users/shreyatiwari15"
     }
 ]
