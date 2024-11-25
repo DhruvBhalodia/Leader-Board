@@ -98,5 +98,15 @@
         "totalContest": 16,
         "img": "codechef.jpg",
         "url": "https://www.codechef.com/users/mr_mojilo"
+    },
+    {
+        "name": "Abhijeet Yadav",
+        "year": 2023,
+        "id": "coderabhi002",
+        "stars": "\u2b50",
+        "codechefRating": 906,
+        "totalContest": 6,
+        "img": "codechef.jpg",
+        "url": "https://www.codechef.com/users/coderabhi002"
     }
 ]
