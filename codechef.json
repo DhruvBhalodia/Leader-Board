@@ -98,5 +98,25 @@
         "totalContest": 16,
         "img": "codechef.jpg",
         "url": "https://www.codechef.com/users/mr_mojilo"
+    },
+    {
+        "name": "Keyur Rathod",
+        "year": 2023,
+        "id": "Keyur_Rathod",
+        "stars": " ",
+        "codechefRating": -1,
+        "totalContest": 5,
+        "img": "codechef.jpg",
+        "url": "https://www.codechef.com/users/Keyur_Rathod"
+    },
+    {
+        "name": "Jenil Mansuriya",
+        "year": 2023,
+        "id": "Jenil2907",
+        "stars": " ",
+        "codechefRating": -1,
+        "totalContest": 0,
+        "img": "codechef.jpg",
+        "url": "https://www.codechef.com/users/Jenil2907"
     }
 ]
