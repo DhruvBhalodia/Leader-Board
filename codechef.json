@@ -98,15 +98,5 @@
         "totalContest": 16,
         "img": "codechef.jpg",
         "url": "https://www.codechef.com/users/mr_mojilo"
-    },
-    {
-        "name": "Vrut Ajudiya",
-        "year": 2023,
-        "id": "vrut_ajudiya",
-        "stars": " ",
-        "codechefRating": -1,
-        "totalContest": 2,
-        "img": "codechef.jpg",
-        "url": "https://www.codechef.com/users/vrut_ajudiya"
     }
 ]
