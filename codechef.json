@@ -98,35 +98,5 @@
         "totalContest": 16,
         "img": "codechef.jpg",
         "url": "https://www.codechef.com/users/mr_mojilo"
-    },
-    {
-        "name": "Sanika Rajguru",
-        "year": 2022,
-        "id": "sanikarajguru",
-        "stars": "\u2b50",
-        "codechefRating": 1065,
-        "totalContest": 13,
-        "img": "codechef.jpg",
-        "url": "https://www.codechef.com/users/sanikarajguru"
-    },
-    {
-        "name": "Heet Ladani",
-        "year": 2023,
-        "id": "unsolved_heet",
-        "stars": " ",
-        "codechefRating": -1,
-        "totalContest": 5,
-        "img": "codechef.jpg",
-        "url": "https://www.codechef.com/users/unsolved_heet"
-    },
-    {
-        "name": "Bhumit Solanki",
-        "year": 2023,
-        "id": "bhumit0922",
-        "stars": "\u2b50",
-        "codechefRating": 1169,
-        "totalContest": 12,
-        "img": "codechef.jpg",
-        "url": "https://www.codechef.com/users/bhumit0922"
     }
 ]
