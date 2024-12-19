@@ -98,45 +98,5 @@
         "totalContest": 16,
         "img": "codechef.jpg",
         "url": "https://www.codechef.com/users/mr_mojilo"
-    },
-    {
-        "name": "OMNI MANWANI",
-        "year": 2022,
-        "id": "omnimanwani17",
-        "stars": "\u2b50",
-        "codechefRating": 1378,
-        "totalContest": 7,
-        "img": "codechef.jpg",
-        "url": "https://www.codechef.com/users/omnimanwani17"
-    },
-    {
-        "name": "Keyur Rathod",
-        "year": 2023,
-        "id": "Keyur_Rathod",
-        "stars": " ",
-        "codechefRating": -1,
-        "totalContest": 5,
-        "img": "codechef.jpg",
-        "url": "https://www.codechef.com/users/Keyur_Rathod"
-    },
-    {
-        "name": "Dhruv Sharma",
-        "year": 2023,
-        "id": "wolff_86",
-        "stars": "\u2b50",
-        "codechefRating": 1013,
-        "totalContest": 7,
-        "img": "codechef.jpg",
-        "url": "https://www.codechef.com/users/wolff_86"
-    },
-    {
-        "name": "Kritik Sharma",
-        "year": 2023,
-        "id": "kritik0710",
-        "stars": " ",
-        "codechefRating": -1,
-        "totalContest": 1,
-        "img": "codechef.jpg",
-        "url": "https://www.codechef.com/users/kritik0710"
     }
 ]
