@@ -98,5 +98,15 @@
         "totalContest": 16,
         "img": "codechef.jpg",
         "url": "https://www.codechef.com/users/mr_mojilo"
+    },
+    {
+        "name": "Devansh Venkatesh",
+        "year": 2023,
+        "id": "devanshadhini",
+        "stars": " ",
+        "codechefRating": -1,
+        "totalContest": 0,
+        "img": "codechef.jpg",
+        "url": "https://www.codechef.com/users/devanshadhini"
     }
 ]
