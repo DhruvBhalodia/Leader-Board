@@ -98,5 +98,15 @@
         "totalContest": 16,
         "img": "codechef.jpg",
         "url": "https://www.codechef.com/users/mr_mojilo"
+    },
+    {
+        "name": "Yuvraj Chauhan",
+        "year": 2022,
+        "id": "dcodr1303",
+        "stars": "\u2b50\u2b50",
+        "codechefRating": 1509,
+        "totalContest": 7,
+        "img": "codechef.jpg",
+        "url": "https://www.codechef.com/users/dcodr1303"
     }
 ]
