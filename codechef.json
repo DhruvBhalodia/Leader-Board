@@ -98,15 +98,5 @@
         "totalContest": 17,
         "img": "codechef.jpg",
         "url": "https://www.codechef.com/users/mr_mojilo"
-    },
-    {
-        "name": "Jigyashu Gupta",
-        "year": 2020,
-        "id": "jigyashu_gupta",
-        "stars": "\u2b50\u2b50\u2b50\u2b50",
-        "codechefRating": 1865,
-        "totalContest": 56,
-        "img": "codechef.jpg",
-        "url": "https://www.codechef.com/users/jigyashu_gupta"
     }
 ]
