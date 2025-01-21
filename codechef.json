@@ -98,15 +98,5 @@
         "totalContest": 17,
         "img": "codechef.jpg",
         "url": "https://www.codechef.com/users/mr_mojilo"
-    },
-    {
-        "name": "Himanshu",
-        "year": 2023,
-        "id": "himanshu3y",
-        "stars": " ",
-        "codechefRating": -1,
-        "totalContest": 4,
-        "img": "codechef.jpg",
-        "url": "https://www.codechef.com/users/himanshu3y"
     }
 ]
