@@ -98,5 +98,15 @@
         "totalContest": 18,
         "img": "codechef.jpg",
         "url": "https://www.codechef.com/users/mr_mojilo"
+    },
+    {
+        "name": "Gokul faleja",
+        "year": 2023,
+        "id": "gokulfaleja_44",
+        "stars": " ",
+        "codechefRating": -1,
+        "totalContest": 4,
+        "img": "codechef.jpg",
+        "url": "https://www.codechef.com/users/gokulfaleja_44"
     }
 ]
