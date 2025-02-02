@@ -98,5 +98,15 @@
         "totalContest": 18,
         "img": "codechef.jpg",
         "url": "https://www.codechef.com/users/mr_mojilo"
+    },
+    {
+        "name": "Kritik Sharma",
+        "year": 2023,
+        "id": "kritik0710",
+        "stars": " ",
+        "codechefRating": -1,
+        "totalContest": 1,
+        "img": "codechef.jpg",
+        "url": "https://www.codechef.com/users/kritik0710"
     }
 ]
