@@ -98,5 +98,15 @@
         "totalContest": 19,
         "img": "codechef.jpg",
         "url": "https://www.codechef.com/users/mr_mojilo"
+    },
+    {
+        "name": "K Hasini Reddy",
+        "year": 2023,
+        "id": "hasinii",
+        "stars": " ",
+        "codechefRating": -1,
+        "totalContest": 1,
+        "img": "codechef.jpg",
+        "url": "https://www.codechef.com/users/hasinii"
     }
 ]
