@@ -54,8 +54,8 @@
         "year": 2022,
         "id": "sasaurabh11",
         "stars": "\u2b50\u2b50\u2b50",
-        "codechefRating": 1763,
-        "totalContest": 64,
+        "codechefRating": 1757,
+        "totalContest": 65,
         "img": "codechef.jpg",
         "url": "https://www.codechef.com/users/sasaurabh11"
     },
@@ -75,7 +75,7 @@
         "id": "harshpatel007",
         "stars": "\u2b50",
         "codechefRating": 1380,
-        "totalContest": 17,
+        "totalContest": 18,
         "img": "codechef.jpg",
         "url": "https://www.codechef.com/users/harshpatel007"
     },
@@ -98,5 +98,15 @@
         "totalContest": 20,
         "img": "codechef.jpg",
         "url": "https://www.codechef.com/users/mr_mojilo"
+    },
+    {
+        "name": "Jigyashu Gupta",
+        "year": 2020,
+        "id": "jigyashu_gupta",
+        "stars": "\u2b50\u2b50\u2b50\u2b50",
+        "codechefRating": 1865,
+        "totalContest": 56,
+        "img": "codechef.jpg",
+        "url": "https://www.codechef.com/users/jigyashu_gupta"
     }
 ]
