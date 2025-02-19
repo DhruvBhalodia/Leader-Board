@@ -98,15 +98,5 @@
         "totalContest": 20,
         "img": "codechef.jpg",
         "url": "https://www.codechef.com/users/mr_mojilo"
-    },
-    {
-        "name": "Akarshhan Kumar",
-        "year": 2023,
-        "id": "thakrishhkumar",
-        "stars": "\u2b50\u2b50",
-        "codechefRating": 1430,
-        "totalContest": 25,
-        "img": "codechef.jpg",
-        "url": "https://www.codechef.com/users/thakrishhkumar"
     }
 ]
