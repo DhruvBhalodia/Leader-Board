@@ -98,15 +98,5 @@
         "totalContest": 20,
         "img": "codechef.jpg",
         "url": "https://www.codechef.com/users/mr_mojilo"
-    },
-    {
-        "name": "Chitransh kumar",
-        "year": 2022,
-        "id": "chitransh2003",
-        "stars": "\u2b50",
-        "codechefRating": 1391,
-        "totalContest": 20,
-        "img": "codechef.jpg",
-        "url": "https://www.codechef.com/users/chitransh2003"
     }
 ]
