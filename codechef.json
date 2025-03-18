@@ -98,5 +98,55 @@
         "totalContest": 20,
         "img": "codechef.jpg",
         "url": "https://www.codechef.com/users/mr_mojilo"
+    },
+    {
+        "name": "Sumedha Baghmar",
+        "year": 2022,
+        "id": "eveecameron707",
+        "stars": "\u2b50",
+        "codechefRating": 1327,
+        "totalContest": 7,
+        "img": "codechef.jpg",
+        "url": "https://www.codechef.com/users/eveecameron707"
+    },
+    {
+        "name": "Lakshay Dhiman",
+        "year": 2022,
+        "id": "ackermanlevi02",
+        "stars": "\u2b50\u2b50\u2b50",
+        "codechefRating": 1759,
+        "totalContest": 26,
+        "img": "codechef.jpg",
+        "url": "https://www.codechef.com/users/ackermanlevi02"
+    },
+    {
+        "name": "Arun Prajapat",
+        "year": 2023,
+        "id": "prajapat_arun",
+        "stars": "\u2b50\u2b50",
+        "codechefRating": 1408,
+        "totalContest": 35,
+        "img": "codechef.jpg",
+        "url": "https://www.codechef.com/users/prajapat_arun"
+    },
+    {
+        "name": "arjun khatriya",
+        "year": 2023,
+        "id": "arjun6918",
+        "stars": " ",
+        "codechefRating": -1,
+        "totalContest": 0,
+        "img": "codechef.jpg",
+        "url": "https://www.codechef.com/users/arjun6918"
+    },
+    {
+        "name": "Vrut Ajudiya",
+        "year": 2023,
+        "id": "vrut_ajudiya",
+        "stars": "\u2b50",
+        "codechefRating": 1197,
+        "totalContest": 7,
+        "img": "codechef.jpg",
+        "url": "https://www.codechef.com/users/vrut_ajudiya"
     }
 ]
