@@ -383,9 +383,9 @@
         "name": "Akarshhan Kumar",
         "year": 2023,
         "id": "KrishhKumar",
-        "stars": 64.64,
-        "leetcodeRating": 1445,
-        "totalContest": 1,
+        "stars": "",
+        "leetcodeRating": 0,
+        "totalContest": 0,
         "img": "leetcode.png",
         "url": "https://leetcode.com/KrishhKumar/"
     },
