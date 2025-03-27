@@ -98,5 +98,25 @@
         "totalContest": 20,
         "img": "codechef.jpg",
         "url": "https://www.codechef.com/users/mr_mojilo"
+    },
+    {
+        "name": "Abhijeet Yadav",
+        "year": 2023,
+        "id": "coderabhi002",
+        "stars": "\u2b50",
+        "codechefRating": 906,
+        "totalContest": 6,
+        "img": "codechef.jpg",
+        "url": "https://www.codechef.com/users/coderabhi002"
+    },
+    {
+        "name": "Kritik Sharma",
+        "year": 2023,
+        "id": "kritik0710",
+        "stars": " ",
+        "codechefRating": -1,
+        "totalContest": 1,
+        "img": "codechef.jpg",
+        "url": "https://www.codechef.com/users/kritik0710"
     }
 ]
