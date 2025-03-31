@@ -98,5 +98,55 @@
         "totalContest": 20,
         "img": "codechef.jpg",
         "url": "https://www.codechef.com/users/mr_mojilo"
+    },
+    {
+        "name": "Tanay Patel",
+        "year": 2022,
+        "id": "legend_tp",
+        "stars": "\u2b50",
+        "codechefRating": 1387,
+        "totalContest": 26,
+        "img": "codechef.jpg",
+        "url": "https://www.codechef.com/users/legend_tp"
+    },
+    {
+        "name": "Ishita Agarwal",
+        "year": 2021,
+        "id": "ishita_139",
+        "stars": "\u2b50\u2b50",
+        "codechefRating": 1562,
+        "totalContest": 23,
+        "img": "codechef.jpg",
+        "url": "https://www.codechef.com/users/ishita_139"
+    },
+    {
+        "name": "Jaideep Jaiswal",
+        "year": 2022,
+        "id": "Pixel_Perception",
+        "stars": " ",
+        "codechefRating": -1,
+        "totalContest": 0,
+        "img": "codechef.jpg",
+        "url": "https://www.codechef.com/users/Pixel_Perception"
+    },
+    {
+        "name": "Deep Bartaria",
+        "year": 2023,
+        "id": "deepbartaria",
+        "stars": "\u2b50\u2b50",
+        "codechefRating": 1462,
+        "totalContest": 28,
+        "img": "codechef.jpg",
+        "url": "https://www.codechef.com/users/deepbartaria"
+    },
+    {
+        "name": "Lehari nambaru",
+        "year": 2023,
+        "id": "nyx_11",
+        "stars": " ",
+        "codechefRating": -1,
+        "totalContest": 0,
+        "img": "codechef.jpg",
+        "url": "https://www.codechef.com/users/nyx_11"
     }
 ]
