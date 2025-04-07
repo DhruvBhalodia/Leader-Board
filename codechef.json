@@ -98,5 +98,25 @@
         "totalContest": 20,
         "img": "codechef.jpg",
         "url": "https://www.codechef.com/users/mr_mojilo"
+    },
+    {
+        "name": "Vedansh Sawner",
+        "year": 2023,
+        "id": "vedansh15",
+        "stars": " ",
+        "codechefRating": -1,
+        "totalContest": 3,
+        "img": "codechef.jpg",
+        "url": "https://www.codechef.com/users/vedansh15"
+    },
+    {
+        "name": "Shreya Tiwari",
+        "year": 2023,
+        "id": "shreyatiwari15",
+        "stars": "\u2b50",
+        "codechefRating": 1177,
+        "totalContest": 27,
+        "img": "codechef.jpg",
+        "url": "https://www.codechef.com/users/shreyatiwari15"
     }
 ]
