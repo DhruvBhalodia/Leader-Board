@@ -98,15 +98,5 @@
         "totalContest": 20,
         "img": "codechef.jpg",
         "url": "https://www.codechef.com/users/mr_mojilo"
-    },
-    {
-        "name": "Deep Bartaria",
-        "year": 2023,
-        "id": "deepbartaria",
-        "stars": "\u2b50\u2b50",
-        "codechefRating": 1462,
-        "totalContest": 28,
-        "img": "codechef.jpg",
-        "url": "https://www.codechef.com/users/deepbartaria"
     }
 ]
