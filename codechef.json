@@ -160,43 +160,33 @@
         "url": "https://www.codechef.com/users/sanikarajguru"
     },
     {
-        "name": "Lakshay Dhiman",
+        "name": "Sumedha Baghmar",
         "year": 2022,
-        "id": "ackermanlevi02",
-        "stars": "\u2b50\u2b50\u2b50",
-        "codechefRating": 1759,
-        "totalContest": 26,
+        "id": "eveecameron707",
+        "stars": "\u2b50",
+        "codechefRating": 1327,
+        "totalContest": 7,
         "img": "codechef.jpg",
-        "url": "https://www.codechef.com/users/ackermanlevi02"
+        "url": "https://www.codechef.com/users/eveecameron707"
     },
     {
-        "name": "Arun Prajapat",
+        "name": "yanshu patel",
         "year": 2023,
-        "id": "prajapat_arun",
-        "stars": "\u2b50\u2b50",
-        "codechefRating": 1415,
-        "totalContest": 35,
+        "id": "yanshu_011",
+        "stars": " ",
+        "codechefRating": -1,
+        "totalContest": 0,
         "img": "codechef.jpg",
-        "url": "https://www.codechef.com/users/prajapat_arun"
+        "url": "https://www.codechef.com/users/yanshu_011"
     },
     {
-        "name": "Urvish Joshi",
-        "year": 2022,
-        "id": "professor_0212",
-        "stars": "\u2b50\u2b50\u2b50",
-        "codechefRating": 1701,
-        "totalContest": 22,
-        "img": "codechef.jpg",
-        "url": "https://www.codechef.com/users/professor_0212"
-    },
-    {
-        "name": "Deep Bartaria",
-        "year": 2023,
-        "id": "deepbartaria",
-        "stars": "\u2b50\u2b50",
-        "codechefRating": 1462,
+        "name": "Anubhav Dubey",
+        "year": 2021,
+        "id": "anubhav_2305",
+        "stars": "\u2b50",
+        "codechefRating": 1351,
         "totalContest": 28,
         "img": "codechef.jpg",
-        "url": "https://www.codechef.com/users/deepbartaria"
+        "url": "https://www.codechef.com/users/anubhav_2305"
     }
 ]
