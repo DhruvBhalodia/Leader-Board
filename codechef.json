@@ -98,5 +98,85 @@
         "totalContest": 20,
         "img": "codechef.jpg",
         "url": "https://www.codechef.com/users/mr_mojilo"
+    },
+    {
+        "name": "Jigyashu Gupta",
+        "year": 2020,
+        "id": "jigyashu_gupta",
+        "stars": "\u2b50\u2b50\u2b50\u2b50",
+        "codechefRating": 1865,
+        "totalContest": 56,
+        "img": "codechef.jpg",
+        "url": "https://www.codechef.com/users/jigyashu_gupta"
+    },
+    {
+        "name": "Sanika Rajguru",
+        "year": 2022,
+        "id": "sanikarajguru",
+        "stars": "\u2b50",
+        "codechefRating": 1065,
+        "totalContest": 13,
+        "img": "codechef.jpg",
+        "url": "https://www.codechef.com/users/sanikarajguru"
+    },
+    {
+        "name": "Jenil Mansuriya",
+        "year": 2023,
+        "id": "Jenil2907",
+        "stars": " ",
+        "codechefRating": -1,
+        "totalContest": 0,
+        "img": "codechef.jpg",
+        "url": "https://www.codechef.com/users/Jenil2907"
+    },
+    {
+        "name": "Arun Prajapat",
+        "year": 2023,
+        "id": "prajapat_arun",
+        "stars": "\u2b50\u2b50",
+        "codechefRating": 1415,
+        "totalContest": 35,
+        "img": "codechef.jpg",
+        "url": "https://www.codechef.com/users/prajapat_arun"
+    },
+    {
+        "name": "Santanu Maharana",
+        "year": 2023,
+        "id": "thunderbolt96",
+        "stars": " ",
+        "codechefRating": -1,
+        "totalContest": 0,
+        "img": "codechef.jpg",
+        "url": "https://www.codechef.com/users/thunderbolt96"
+    },
+    {
+        "name": "Urvish Joshi",
+        "year": 2022,
+        "id": "professor_0212",
+        "stars": "\u2b50\u2b50\u2b50",
+        "codechefRating": 1703,
+        "totalContest": 22,
+        "img": "codechef.jpg",
+        "url": "https://www.codechef.com/users/professor_0212"
+    },
+    {
+        "name": "Kushagra Taneja",
+        "year": 2022,
+        "id": "kushagra_t",
+        "stars": "\u2b50",
+        "codechefRating": 1030,
+        "totalContest": 37,
+        "img": "codechef.jpg",
+        "url": "https://www.codechef.com/users/kushagra_t"
+    },
+    {
+        "name": "Ankesh Mishra",
+        "year": 2023,
+        "id": "ankeshm",
+        "stars": "\u2b50",
+        "codechefRating": 1176,
+        "totalContest": 22,
+        "img": "codechef.jpg",
+        "url": "https://www.codechef.com/users/ankeshm"
     }
 ]
