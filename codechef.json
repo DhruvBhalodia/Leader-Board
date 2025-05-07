@@ -4,8 +4,8 @@
         "year": 2022,
         "id": "dhruvbhalodia0",
         "stars": "\u2b50\u2b50\u2b50",
-        "codechefRating": 1772,
-        "totalContest": 14,
+        "codechefRating": 1751,
+        "totalContest": 15,
         "img": "codechef.jpg",
         "url": "https://www.codechef.com/users/dhruvbhalodia0"
     },
@@ -98,5 +98,75 @@
         "totalContest": 20,
         "img": "codechef.jpg",
         "url": "https://www.codechef.com/users/mr_mojilo"
+    },
+    {
+        "name": "Tanay Patel",
+        "year": 2022,
+        "id": "legend_tp",
+        "stars": "\u2b50",
+        "codechefRating": 1387,
+        "totalContest": 26,
+        "img": "codechef.jpg",
+        "url": "https://www.codechef.com/users/legend_tp"
+    },
+    {
+        "name": "Sanika Rajguru",
+        "year": 2022,
+        "id": "sanikarajguru",
+        "stars": "\u2b50",
+        "codechefRating": 1065,
+        "totalContest": 13,
+        "img": "codechef.jpg",
+        "url": "https://www.codechef.com/users/sanikarajguru"
+    },
+    {
+        "name": "Santanu Maharana",
+        "year": 2023,
+        "id": "thunderbolt96",
+        "stars": " ",
+        "codechefRating": -1,
+        "totalContest": 0,
+        "img": "codechef.jpg",
+        "url": "https://www.codechef.com/users/thunderbolt96"
+    },
+    {
+        "name": "Urvish Joshi",
+        "year": 2022,
+        "id": "professor_0212",
+        "stars": "\u2b50\u2b50\u2b50",
+        "codechefRating": 1668,
+        "totalContest": 23,
+        "img": "codechef.jpg",
+        "url": "https://www.codechef.com/users/professor_0212"
+    },
+    {
+        "name": "Jaideep Jaiswal",
+        "year": 2022,
+        "id": "Pixel_Perception",
+        "stars": " ",
+        "codechefRating": -1,
+        "totalContest": 0,
+        "img": "codechef.jpg",
+        "url": "https://www.codechef.com/users/Pixel_Perception"
+    },
+    {
+        "name": "Anurag Daf",
+        "year": 2023,
+        "id": "anurag_1401",
+        "stars": " ",
+        "codechefRating": -1,
+        "totalContest": 0,
+        "img": "codechef.jpg",
+        "url": "https://www.codechef.com/users/anurag_1401"
+    },
+    {
+        "name": "BHARGAVI PIRIDI",
+        "year": 2023,
+        "id": "bhargavii_03",
+        "stars": " ",
+        "codechefRating": -1,
+        "totalContest": 1,
+        "img": "codechef.jpg",
+        "url": "https://www.codechef.com/users/bhargavii_03"
     }
 ]
