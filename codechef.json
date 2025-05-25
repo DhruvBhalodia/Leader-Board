@@ -98,5 +98,15 @@
         "totalContest": 20,
         "img": "codechef.jpg",
         "url": "https://www.codechef.com/users/mr_mojilo"
+    },
+    {
+        "name": "Tanay Patel",
+        "year": 2022,
+        "id": "legend_tp",
+        "stars": "\u2b50",
+        "codechefRating": 1387,
+        "totalContest": 26,
+        "img": "codechef.jpg",
+        "url": "https://www.codechef.com/users/legend_tp"
     }
 ]
