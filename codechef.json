@@ -64,7 +64,7 @@
         "year": 2023,
         "id": "bhupat",
         "stars": "\u2b50",
-        "codechefRating": 1305,
+        "codechefRating": 1307,
         "totalContest": 22,
         "img": "codechef.jpg",
         "url": "https://www.codechef.com/users/bhupat"
@@ -98,15 +98,5 @@
         "totalContest": 20,
         "img": "codechef.jpg",
         "url": "https://www.codechef.com/users/mr_mojilo"
-    },
-    {
-        "name": "Poojan Simariya",
-        "year": 2023,
-        "id": "poojan30",
-        "stars": "\u2b50",
-        "codechefRating": 1284,
-        "totalContest": 15,
-        "img": "codechef.jpg",
-        "url": "https://www.codechef.com/users/poojan30"
     }
 ]
