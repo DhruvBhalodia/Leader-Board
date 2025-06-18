@@ -98,15 +98,5 @@
         "totalContest": 20,
         "img": "codechef.jpg",
         "url": "https://www.codechef.com/users/mr_mojilo"
-    },
-    {
-        "name": "Sumedha Baghmar",
-        "year": 2022,
-        "id": "eveecameron707",
-        "stars": "\u2b50",
-        "codechefRating": 1327,
-        "totalContest": 7,
-        "img": "codechef.jpg",
-        "url": "https://www.codechef.com/users/eveecameron707"
     }
 ]
