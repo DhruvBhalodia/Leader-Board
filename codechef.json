@@ -98,55 +98,5 @@
         "totalContest": 20,
         "img": "codechef.jpg",
         "url": "https://www.codechef.com/users/mr_mojilo"
-    },
-    {
-        "name": "Jigyashu Gupta",
-        "year": 2020,
-        "id": "jigyashu_gupta",
-        "stars": "\u2b50\u2b50\u2b50\u2b50",
-        "codechefRating": 1865,
-        "totalContest": 56,
-        "img": "codechef.jpg",
-        "url": "https://www.codechef.com/users/jigyashu_gupta"
-    },
-    {
-        "name": "arjun khatriya",
-        "year": 2023,
-        "id": "arjun6918",
-        "stars": " ",
-        "codechefRating": -1,
-        "totalContest": 0,
-        "img": "codechef.jpg",
-        "url": "https://www.codechef.com/users/arjun6918"
-    },
-    {
-        "name": "K Hasini Reddy",
-        "year": 2023,
-        "id": "hasinii",
-        "stars": " ",
-        "codechefRating": -1,
-        "totalContest": 4,
-        "img": "codechef.jpg",
-        "url": "https://www.codechef.com/users/hasinii"
-    },
-    {
-        "name": "Vrut Ajudiya",
-        "year": 2023,
-        "id": "vrut_ajudiya",
-        "stars": "\u2b50",
-        "codechefRating": 1197,
-        "totalContest": 7,
-        "img": "codechef.jpg",
-        "url": "https://www.codechef.com/users/vrut_ajudiya"
-    },
-    {
-        "name": "Ankesh Mishra",
-        "year": 2023,
-        "id": "ankeshm",
-        "stars": "\u2b50",
-        "codechefRating": 1213,
-        "totalContest": 26,
-        "img": "codechef.jpg",
-        "url": "https://www.codechef.com/users/ankeshm"
     }
 ]
