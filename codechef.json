@@ -98,5 +98,15 @@
         "totalContest": 20,
         "img": "codechef.jpg",
         "url": "https://www.codechef.com/users/mr_mojilo"
+    },
+    {
+        "name": "Yash Chandaria",
+        "year": 2023,
+        "id": "yashchandaria",
+        "stars": "\u2b50",
+        "codechefRating": 1051,
+        "totalContest": 14,
+        "img": "codechef.jpg",
+        "url": "https://www.codechef.com/users/yashchandaria"
     }
 ]
