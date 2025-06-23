@@ -100,73 +100,13 @@
         "url": "https://www.codechef.com/users/mr_mojilo"
     },
     {
-        "name": "OMNI MANWANI",
-        "year": 2022,
-        "id": "omnimanwani17",
-        "stars": "\u2b50",
-        "codechefRating": 1391,
-        "totalContest": 11,
+        "name": "Jigyashu Gupta",
+        "year": 2020,
+        "id": "jigyashu_gupta",
+        "stars": "\u2b50\u2b50\u2b50\u2b50",
+        "codechefRating": 1865,
+        "totalContest": 56,
         "img": "codechef.jpg",
-        "url": "https://www.codechef.com/users/omnimanwani17"
-    },
-    {
-        "name": "Sumedha Baghmar",
-        "year": 2022,
-        "id": "eveecameron707",
-        "stars": "\u2b50",
-        "codechefRating": 1327,
-        "totalContest": 7,
-        "img": "codechef.jpg",
-        "url": "https://www.codechef.com/users/eveecameron707"
-    },
-    {
-        "name": "yanshu patel",
-        "year": 2023,
-        "id": "yanshu_011",
-        "stars": " ",
-        "codechefRating": -1,
-        "totalContest": 0,
-        "img": "codechef.jpg",
-        "url": "https://www.codechef.com/users/yanshu_011"
-    },
-    {
-        "name": "Chirag Singh Rathore",
-        "year": 2022,
-        "id": "chotimaster17",
-        "stars": " ",
-        "codechefRating": -1,
-        "totalContest": 0,
-        "img": "codechef.jpg",
-        "url": "https://www.codechef.com/users/chotimaster17"
-    },
-    {
-        "name": "Himanshu",
-        "year": 2023,
-        "id": "himanshu3y",
-        "stars": " ",
-        "codechefRating": -1,
-        "totalContest": 4,
-        "img": "codechef.jpg",
-        "url": "https://www.codechef.com/users/himanshu3y"
-    },
-    {
-        "name": "K Hasini Reddy",
-        "year": 2023,
-        "id": "hasinii",
-        "stars": " ",
-        "codechefRating": -1,
-        "totalContest": 4,
-        "img": "codechef.jpg",
-        "url": "https://www.codechef.com/users/hasinii"
-    },
-    {
-        "name": "Deep Bartaria",
-        "year": 2023,
-        "id": "deepbartaria",
-        "stars": "\u2b50\u2b50",
-        "codechefRating": 1462,
-        "totalContest": 28,
-        "img": "codechef.jpg",
-        "url": "https://www.codechef.com/users/deepbartaria"
+        "url": "https://www.codechef.com/users/jigyashu_gupta"
     }
 ]
