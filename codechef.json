@@ -100,63 +100,13 @@
         "url": "https://www.codechef.com/users/mr_mojilo"
     },
     {
-        "name": "Sumedha Baghmar",
-        "year": 2022,
-        "id": "eveecameron707",
-        "stars": "\u2b50",
-        "codechefRating": 1327,
-        "totalContest": 7,
+        "name": "Jigyashu Gupta",
+        "year": 2020,
+        "id": "jigyashu_gupta",
+        "stars": "\u2b50\u2b50\u2b50\u2b50",
+        "codechefRating": 1865,
+        "totalContest": 56,
         "img": "codechef.jpg",
-        "url": "https://www.codechef.com/users/eveecameron707"
-    },
-    {
-        "name": "Chirag Singh Rathore",
-        "year": 2022,
-        "id": "chotimaster17",
-        "stars": " ",
-        "codechefRating": -1,
-        "totalContest": 0,
-        "img": "codechef.jpg",
-        "url": "https://www.codechef.com/users/chotimaster17"
-    },
-    {
-        "name": "Bhumit Solanki",
-        "year": 2023,
-        "id": "bhumit0922",
-        "stars": "\u2b50",
-        "codechefRating": 1169,
-        "totalContest": 12,
-        "img": "codechef.jpg",
-        "url": "https://www.codechef.com/users/bhumit0922"
-    },
-    {
-        "name": "Akarshhan Kumar",
-        "year": 2023,
-        "id": "thakrishhkumar",
-        "stars": "\u2b50",
-        "codechefRating": 1380,
-        "totalContest": 28,
-        "img": "codechef.jpg",
-        "url": "https://www.codechef.com/users/thakrishhkumar"
-    },
-    {
-        "name": "Deep Bartaria",
-        "year": 2023,
-        "id": "deepbartaria",
-        "stars": "\u2b50\u2b50",
-        "codechefRating": 1462,
-        "totalContest": 28,
-        "img": "codechef.jpg",
-        "url": "https://www.codechef.com/users/deepbartaria"
-    },
-    {
-        "name": "Kritik Sharma",
-        "year": 2023,
-        "id": "kritik0710",
-        "stars": " ",
-        "codechefRating": -1,
-        "totalContest": 1,
-        "img": "codechef.jpg",
-        "url": "https://www.codechef.com/users/kritik0710"
+        "url": "https://www.codechef.com/users/jigyashu_gupta"
     }
 ]
