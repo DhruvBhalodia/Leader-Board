@@ -98,45 +98,5 @@
         "totalContest": 20,
         "img": "codechef.jpg",
         "url": "https://www.codechef.com/users/mr_mojilo"
-    },
-    {
-        "name": "Ishita Agarwal",
-        "year": 2021,
-        "id": "ishita_139",
-        "stars": "\u2b50\u2b50",
-        "codechefRating": 1562,
-        "totalContest": 23,
-        "img": "codechef.jpg",
-        "url": "https://www.codechef.com/users/ishita_139"
-    },
-    {
-        "name": "Saransh Naik",
-        "year": 2023,
-        "id": "saranshnaik14",
-        "stars": "\u2b50",
-        "codechefRating": 1398,
-        "totalContest": 13,
-        "img": "codechef.jpg",
-        "url": "https://www.codechef.com/users/saranshnaik14"
-    },
-    {
-        "name": "Yash Chandaria",
-        "year": 2023,
-        "id": "yashchandaria",
-        "stars": "\u2b50",
-        "codechefRating": 1051,
-        "totalContest": 14,
-        "img": "codechef.jpg",
-        "url": "https://www.codechef.com/users/yashchandaria"
-    },
-    {
-        "name": "Arun Prajapat",
-        "year": 2023,
-        "id": "prajapat_arun",
-        "stars": "\u2b50",
-        "codechefRating": 1391,
-        "totalContest": 37,
-        "img": "codechef.jpg",
-        "url": "https://www.codechef.com/users/prajapat_arun"
     }
 ]
