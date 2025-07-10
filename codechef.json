@@ -98,55 +98,5 @@
         "totalContest": 20,
         "img": "codechef.jpg",
         "url": "https://www.codechef.com/users/mr_mojilo"
-    },
-    {
-        "name": "Jigyashu Gupta",
-        "year": 2020,
-        "id": "jigyashu_gupta",
-        "stars": "\u2b50\u2b50\u2b50\u2b50",
-        "codechefRating": 1865,
-        "totalContest": 56,
-        "img": "codechef.jpg",
-        "url": "https://www.codechef.com/users/jigyashu_gupta"
-    },
-    {
-        "name": "Anubhav Dubey",
-        "year": 2021,
-        "id": "anubhav_2305",
-        "stars": "\u2b50",
-        "codechefRating": 1351,
-        "totalContest": 28,
-        "img": "codechef.jpg",
-        "url": "https://www.codechef.com/users/anubhav_2305"
-    },
-    {
-        "name": "Chirag Singh Rathore",
-        "year": 2022,
-        "id": "chotimaster17",
-        "stars": " ",
-        "codechefRating": -1,
-        "totalContest": 0,
-        "img": "codechef.jpg",
-        "url": "https://www.codechef.com/users/chotimaster17"
-    },
-    {
-        "name": "Anurag Daf",
-        "year": 2023,
-        "id": "anurag_1401",
-        "stars": " ",
-        "codechefRating": -1,
-        "totalContest": 0,
-        "img": "codechef.jpg",
-        "url": "https://www.codechef.com/users/anurag_1401"
-    },
-    {
-        "name": "Ankesh Mishra",
-        "year": 2023,
-        "id": "ankeshm",
-        "stars": "\u2b50",
-        "codechefRating": 1240,
-        "totalContest": 27,
-        "img": "codechef.jpg",
-        "url": "https://www.codechef.com/users/ankeshm"
     }
 ]
