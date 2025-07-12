@@ -98,5 +98,75 @@
         "totalContest": 20,
         "img": "codechef.jpg",
         "url": "https://www.codechef.com/users/mr_mojilo"
+    },
+    {
+        "name": "Jigyashu Gupta",
+        "year": 2020,
+        "id": "jigyashu_gupta",
+        "stars": "\u2b50\u2b50\u2b50\u2b50",
+        "codechefRating": 1865,
+        "totalContest": 56,
+        "img": "codechef.jpg",
+        "url": "https://www.codechef.com/users/jigyashu_gupta"
+    },
+    {
+        "name": "Abhijeet Yadav",
+        "year": 2023,
+        "id": "coderabhi002",
+        "stars": "\u2b50",
+        "codechefRating": 906,
+        "totalContest": 6,
+        "img": "codechef.jpg",
+        "url": "https://www.codechef.com/users/coderabhi002"
+    },
+    {
+        "name": "Sumedha Baghmar",
+        "year": 2022,
+        "id": "eveecameron707",
+        "stars": "\u2b50",
+        "codechefRating": 1327,
+        "totalContest": 7,
+        "img": "codechef.jpg",
+        "url": "https://www.codechef.com/users/eveecameron707"
+    },
+    {
+        "name": "Santanu Maharana",
+        "year": 2023,
+        "id": "thunderbolt96",
+        "stars": " ",
+        "codechefRating": -1,
+        "totalContest": 0,
+        "img": "codechef.jpg",
+        "url": "https://www.codechef.com/users/thunderbolt96"
+    },
+    {
+        "name": "Akarshhan Kumar",
+        "year": 2023,
+        "id": "thakrishhkumar",
+        "stars": "\u2b50",
+        "codechefRating": 1380,
+        "totalContest": 28,
+        "img": "codechef.jpg",
+        "url": "https://www.codechef.com/users/thakrishhkumar"
+    },
+    {
+        "name": "Vedansh Sawner",
+        "year": 2023,
+        "id": "vedansh15",
+        "stars": "\u2b50",
+        "codechefRating": 1054,
+        "totalContest": 6,
+        "img": "codechef.jpg",
+        "url": "https://www.codechef.com/users/vedansh15"
+    },
+    {
+        "name": "Udit Singh",
+        "year": 2023,
+        "id": "udit1893",
+        "stars": "\u2b50\u2b50\u2b50",
+        "codechefRating": 1611,
+        "totalContest": 53,
+        "img": "codechef.jpg",
+        "url": "https://www.codechef.com/users/udit1893"
     }
 ]
