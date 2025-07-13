@@ -98,5 +98,55 @@
         "totalContest": 20,
         "img": "codechef.jpg",
         "url": "https://www.codechef.com/users/mr_mojilo"
+    },
+    {
+        "name": "Jenil Mansuriya",
+        "year": 2023,
+        "id": "Jenil2907",
+        "stars": " ",
+        "codechefRating": -1,
+        "totalContest": 0,
+        "img": "codechef.jpg",
+        "url": "https://www.codechef.com/users/Jenil2907"
+    },
+    {
+        "name": "Saksham Sharma",
+        "year": 2023,
+        "id": "sakhsamsharma",
+        "stars": " ",
+        "codechefRating": -1,
+        "totalContest": 3,
+        "img": "codechef.jpg",
+        "url": "https://www.codechef.com/users/sakhsamsharma"
+    },
+    {
+        "name": "Saransh Naik",
+        "year": 2023,
+        "id": "saranshnaik14",
+        "stars": "\u2b50",
+        "codechefRating": 1398,
+        "totalContest": 13,
+        "img": "codechef.jpg",
+        "url": "https://www.codechef.com/users/saranshnaik14"
+    },
+    {
+        "name": "Dhruv Sharma",
+        "year": 2023,
+        "id": "wolff_86",
+        "stars": "\u2b50",
+        "codechefRating": 1063,
+        "totalContest": 20,
+        "img": "codechef.jpg",
+        "url": "https://www.codechef.com/users/wolff_86"
+    },
+    {
+        "name": "Rohini Badabagni",
+        "year": 2023,
+        "id": "rohini2596",
+        "stars": " ",
+        "codechefRating": -1,
+        "totalContest": 0,
+        "img": "codechef.jpg",
+        "url": "https://www.codechef.com/users/rohini2596"
     }
 ]
