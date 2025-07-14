@@ -98,35 +98,5 @@
         "totalContest": 20,
         "img": "codechef.jpg",
         "url": "https://www.codechef.com/users/mr_mojilo"
-    },
-    {
-        "name": "Jigyashu Gupta",
-        "year": 2020,
-        "id": "jigyashu_gupta",
-        "stars": "\u2b50\u2b50\u2b50\u2b50",
-        "codechefRating": 1865,
-        "totalContest": 56,
-        "img": "codechef.jpg",
-        "url": "https://www.codechef.com/users/jigyashu_gupta"
-    },
-    {
-        "name": "Ishita Agarwal",
-        "year": 2021,
-        "id": "ishita_139",
-        "stars": "\u2b50\u2b50",
-        "codechefRating": 1562,
-        "totalContest": 23,
-        "img": "codechef.jpg",
-        "url": "https://www.codechef.com/users/ishita_139"
-    },
-    {
-        "name": "Kritik Sharma",
-        "year": 2023,
-        "id": "kritik0710",
-        "stars": " ",
-        "codechefRating": -1,
-        "totalContest": 1,
-        "img": "codechef.jpg",
-        "url": "https://www.codechef.com/users/kritik0710"
     }
 ]
