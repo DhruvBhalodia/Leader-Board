@@ -98,5 +98,95 @@
         "totalContest": 20,
         "img": "codechef.jpg",
         "url": "https://www.codechef.com/users/mr_mojilo"
+    },
+    {
+        "name": "Jigyashu Gupta",
+        "year": 2020,
+        "id": "jigyashu_gupta",
+        "stars": "\u2b50\u2b50\u2b50\u2b50",
+        "codechefRating": 1865,
+        "totalContest": 56,
+        "img": "codechef.jpg",
+        "url": "https://www.codechef.com/users/jigyashu_gupta"
+    },
+    {
+        "name": "Abhijeet Yadav",
+        "year": 2023,
+        "id": "coderabhi002",
+        "stars": "\u2b50",
+        "codechefRating": 906,
+        "totalContest": 6,
+        "img": "codechef.jpg",
+        "url": "https://www.codechef.com/users/coderabhi002"
+    },
+    {
+        "name": "OMNI MANWANI",
+        "year": 2022,
+        "id": "omnimanwani17",
+        "stars": "\u2b50",
+        "codechefRating": 1391,
+        "totalContest": 11,
+        "img": "codechef.jpg",
+        "url": "https://www.codechef.com/users/omnimanwani17"
+    },
+    {
+        "name": "Jenil Mansuriya",
+        "year": 2023,
+        "id": "Jenil2907",
+        "stars": " ",
+        "codechefRating": -1,
+        "totalContest": 0,
+        "img": "codechef.jpg",
+        "url": "https://www.codechef.com/users/Jenil2907"
+    },
+    {
+        "name": "Saransh Naik",
+        "year": 2023,
+        "id": "saranshnaik14",
+        "stars": "\u2b50",
+        "codechefRating": 1398,
+        "totalContest": 13,
+        "img": "codechef.jpg",
+        "url": "https://www.codechef.com/users/saranshnaik14"
+    },
+    {
+        "name": "Himanshu",
+        "year": 2023,
+        "id": "himanshu3y",
+        "stars": " ",
+        "codechefRating": -1,
+        "totalContest": 4,
+        "img": "codechef.jpg",
+        "url": "https://www.codechef.com/users/himanshu3y"
+    },
+    {
+        "name": "Vrut Ajudiya",
+        "year": 2023,
+        "id": "vrut_ajudiya",
+        "stars": "\u2b50",
+        "codechefRating": 1197,
+        "totalContest": 7,
+        "img": "codechef.jpg",
+        "url": "https://www.codechef.com/users/vrut_ajudiya"
+    },
+    {
+        "name": "Akarshhan Kumar",
+        "year": 2023,
+        "id": "thakrishhkumar",
+        "stars": "\u2b50",
+        "codechefRating": 1380,
+        "totalContest": 28,
+        "img": "codechef.jpg",
+        "url": "https://www.codechef.com/users/thakrishhkumar"
+    },
+    {
+        "name": "BHARGAVI PIRIDI",
+        "year": 2023,
+        "id": "bhargavii_03",
+        "stars": " ",
+        "codechefRating": -1,
+        "totalContest": 3,
+        "img": "codechef.jpg",
+        "url": "https://www.codechef.com/users/bhargavii_03"
     }
 ]
