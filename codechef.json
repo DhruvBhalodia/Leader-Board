@@ -314,7 +314,7 @@
         "year": 2023,
         "id": "hasinii",
         "stars": "\u2b50\u2b50",
-        "codechefRating": 1465,
+        "codechefRating": 1469,
         "totalContest": 14,
         "img": "codechef.jpg",
         "url": "https://www.codechef.com/users/hasinii"
@@ -323,9 +323,9 @@
         "name": "Devansh Venkatesh",
         "year": 2023,
         "id": "devanshadhini",
-        "stars": " ",
-        "codechefRating": -1,
-        "totalContest": 5,
+        "stars": "\u2b50",
+        "codechefRating": 1334,
+        "totalContest": 6,
         "img": "codechef.jpg",
         "url": "https://www.codechef.com/users/devanshadhini"
     },
@@ -385,7 +385,7 @@
         "id": "ayush91003",
         "stars": "\u2b50",
         "codechefRating": 1185,
-        "totalContest": 14,
+        "totalContest": 15,
         "img": "codechef.jpg",
         "url": "https://www.codechef.com/users/ayush91003"
     },
@@ -505,7 +505,7 @@
         "id": "wolff_86",
         "stars": "\u2b50",
         "codechefRating": 1311,
-        "totalContest": 31,
+        "totalContest": 32,
         "img": "codechef.jpg",
         "url": "https://www.codechef.com/users/wolff_86"
     },
